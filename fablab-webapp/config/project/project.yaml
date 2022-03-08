@@ -1,4 +1,4 @@
-dateModified: 1646703674
+dateModified: 1646773635
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -8,6 +8,11 @@ meta:
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     b71257cc-2010-4297-9163-f1f60dd5ac31: Common # Common
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
+plugins:
+  qrcode:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.1
 system:
   edition: solo
   live: true

@@ -22,13 +22,11 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/yiisoft/yii2-queue" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/yiisoft/yii2-debug" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/yiisoft/yii2-swiftmailer" />
-      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/yiisoft/yii2-shell" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/polyfill-php80" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/string" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/yaml" />
-      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/webonyx/graphql-php" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/polyfill-iconv" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/polyfill-ctype" />
@@ -62,7 +60,6 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/voku/urlify" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/voku/stringy" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/react/promise" />
-      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/seld/cli-prompt" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/opis/closure" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/seld/phar-utils" />
@@ -77,7 +74,6 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/cebe/markdown" />
-      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/phpdocumentor/reflection-docblock" />
@@ -85,6 +81,15 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/pixelandtonic/imagine" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/phpdocumentor/type-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/khanamiryan/qrcode-detector-decoder" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/endroid/qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/bacon/bacon-qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/myclabs/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/kuriousagency/qrcode" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/dasprid/enum" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

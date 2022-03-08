@@ -8,7 +8,7 @@
 <br />
 <div align="center">
    <a href="https://github.com/NielsMoens/NielsMoens-3NMD-BAP-2021-2022">
-    <img src="./assets/logo-white.png" alt="Logo" width="80" height="80">
+    <img src="./assets/logo-white.png" alt="Logo">
   </a>
 
 <h3 align="center">FABLAB-webapp</h3>
