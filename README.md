@@ -8,7 +8,7 @@
 <br />
 <div align="center">
    <a href="https://github.com/NielsMoens/NielsMoens-3NMD-BAP-2021-2022">
-    <img src="./assets/logo-white.png" alt="Logo">
+    <img src="fablab-webapp/web/assets/images/logo-white.png" alt="Logo">
   </a>
 
 <h3 align="center">FABLAB-webapp</h3>
@@ -105,13 +105,14 @@ List of things you need to use and how to install them.
 
 
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 WIP
 _For more examples, please refer to the [Documentation](TODO)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Adobe Xd
+Here you find the [design process](https://xd.adobe.com/view/17defd7d-2cdd-4dcb-9deb-02f650c26be3-428d/)
 
 <!-- ROADMAP -->
 ## Roadmap

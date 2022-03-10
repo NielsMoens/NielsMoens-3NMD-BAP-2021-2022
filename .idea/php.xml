@@ -90,6 +90,8 @@
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/kuriousagency/qrcode" />
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/fablab-webapp/vendor/mdi/css" />
+      <path value="$PROJECT_DIR$/fablab-webapp/vendor/mdi/fonts" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

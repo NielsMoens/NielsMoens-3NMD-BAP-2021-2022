@@ -90,6 +90,8 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/myclabs/php-enum" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/kuriousagency/qrcode" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/dasprid/enum" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/mdi/css" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/mdi/fonts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

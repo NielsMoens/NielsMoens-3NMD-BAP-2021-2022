@@ -1,191 +1,222 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>Welcome to Craft CMS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <style>
-        html,
-        body {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            height: 100%;
-            font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: hsl(212, 60%, 97%);
-            color: hsl(209, 18%, 30%);
-            display: flex;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        h2 {
-            margin-top: 24px;
-            font-size: 1em;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        p {
-            line-height: 1.4em;
-            margin-bottom: 1.4em;
-        }
-
-        ul {
-            line-height: 1.3em;
-            padding-left: 20px;
-            margin-bottom: 0;
-        }
-
-        ul li {
-            margin-bottom: 0.35em;
-        }
-
-        a {
-            color: #0B69A3;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .go {
-            color: #0B69A3;
-        }
-
-        .go:after {
-            padding-left: 4px;
-            content: '→';
-            text-decoration: none !important;
-        }
-
-        small {
-            color: hsl(211, 11%, 59%);
-        }
-
-        code {
-            display: inline-block;
-            color: #EF4E4E;
-            padding: 0 2px;
-            background: hsl(212, 60%, 97%);
-            border-radius: 3px;
-            line-height: 1.3;
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            font-size: 0.9em;
-        }
-
-        #container {
-            flex-grow: 1;
-        }
-
-        #modal {
-            background: #fff;
-        }
-
-        #aside {
-            background: hsl(212, 60%, 97%);
-        }
-
-        .content {
-            padding: 35px;
-            padding-left: calc(35px + env(safe-area-inset-left));
-            padding-right: calc(35px + env(safe-area-inset-right));
-        }
-
-        @media (min-width:768px) {
-            #modal {
-                display: flex;
-            }
-
-            #main {
-                width: 50%;
-                overflow: auto;
-            }
-
-            #aside {
-                width: 50%;
-                overflow: auto;
-            }
-        }
-
-        @media (min-width:768px) and (min-height: 376px) {
-            body {
-                background-color: hsl(212, 50%, 93%);
-                background-image: url("{{ view.getAssetManager().getPublishedUrl('@app/web/assets/installer/dist', true, 'images/installer-bg.png') }}");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-            }
-
-            #container {
-                display: flex;
-                padding: 24px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #modal {
-                height: 100%;
-                max-width: 800px;
-                max-height: 525px;
-                border-radius: 4px;
-                overflow: auto;
-                box-shadow: 0 25px 100px rgba(0, 0, 0, 0.5);
-            }
-
-            #aside {
-                overflow: auto;
-            }
-        }
-
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fablablab-webapp </title>
+    <!-- import:css -->
+    <link rel="stylesheet" href="../web/assets/css/style.css">
+    <link rel="stylesheet" href="vendor/mdi/css/materialdesignicons.min.css">
+    <!-- import:favicon -->
+    <link rel="shortcut icon" href="../web/assets/images/logo-white.png" />
 </head>
-<body class="ltr">
-<div id="container">
-    <div id="modal">
-        <div id="main">
-            <div class="content">
-                <h1>Welcome</h1>
-                <p>Thanks for installing Craft CMS!</p>
-                <p>You’re looking at the <code>index.twig</code> template file located in your
-                    <code>templates/</code> folder. Once you’re ready to start building out your site’s
-                    front end, you can replace this with something custom.</p>
-                <p>If you’re new to Craft CMS, take some time to check out the resources on the right
-                    when you get a chance&mdash;especially
-                    <a href="https://craftcms.com/discord" target="_blank">Discord</a>
-                    and <a href="http://craftcms.stackexchange.com/" target="_blank">Stack Exchange</a>.
-                    The Craft community is full of smart, friendly, and helpful people!</p>
-                <p><span class="go"><a href="{{ cpUrl('') }}">Go to your control panel</a></span></p>
+<body>
+<div class="container-scroller">
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+            <div class="me-3">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+            <div>
+                <a class="navbar-brand brand-logo" href="index.html">
+                    <img src="images/logo.svg" alt="logo" />
+                </a>
+                <a class="navbar-brand brand-logo-mini" href="index.html">
+                    <img src="images/logo-mini.svg" alt="logo" />
+                </a>
             </div>
         </div>
-        <div id="aside">
-            <div class="content">
-                <h2>Popular Resources</h2>
-                <ul>
-                    <li><a href="https://craftcms.com/docs/getting-started-tutorial/" target="_blank">Tutorial</a><br><small>Learn the basics.</small></li>
-                    <li><a href="https://craftcms.com/docs/3.x/" target="_blank">Documentation</a><br><small>Read the official docs.</small></li>
-                    <li><a href="https://craftcms.com/guides" target="_blank">Knowledge Base</a><br><small>Find answers to common problems.</small></li>
-                    <li><a href="https://twitter.com/hashtag/craftcms" target="_blank">#craftcms</a><br><small>See the latest tweets about Craft.</small></li>
-                    <li><a href="https://craftcms.com/discord" target="_blank">Discord</a><br><small>Meet the community.</small></li>
-                    <li><a href="http://craftcms.stackexchange.com/" target="_blank">Stack Exchange</a><br><small>Get help and help others.</small></li>
-                    <li><a href="https://craftquest.io/" target="_blank">CraftQuest</a><br><small>Watch unlimited video lessons and courses.</small></li>
-                    <li><a href="http://craftlinklist.com/" target="_blank">Craft Link List</a><br><small>Stay in-the-know.</small></li>
-                    <li><a href="https://nystudio107.com/blog" target="_blank">nystudio107 Blog</a><br><small>Learn Craft and modern web development.</small></li>
-                </ul>
-            </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                    <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold"></span></h1>
+                    <h3 class="welcome-sub-text">Welcome to the Fablab-webApp </h3>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+            </button>
         </div>
+    </nav>
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="mdi mdi-grid-large menu-icon"></i>
+                        <span class="menu-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-category">UI Elements</li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <i class="menu-icon mdi mdi-floor-plan"></i>
+                        <span class="menu-title">UI Elements</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item nav-category">Forms and Datas</li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                        <i class="menu-icon mdi mdi-card-text-outline"></i>
+                        <span class="menu-title">Form elements</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="form-elements">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                        <i class="menu-icon mdi mdi-chart-line"></i>
+                        <span class="menu-title">Charts</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="charts">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                        <i class="menu-icon mdi mdi-table"></i>
+                        <span class="menu-title">Tables</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="tables">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                        <i class="menu-icon mdi mdi-layers-outline"></i>
+                        <span class="menu-title">Icons</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="icons">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item nav-category">pages</li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="menu-icon mdi mdi-account-circle-outline"></i>
+                        <span class="menu-title">User Pages</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="auth">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item nav-category">help</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+                        <i class="menu-icon mdi mdi-file-document"></i>
+                        <span class="menu-title">Documentation</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="home-tab">
+                            <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                                <div>
+                                    <div class="btn-wrapper">
+                                        <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a>
+                                        <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a>
+                                        <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content tab-content-basic">
+                                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
+                                    <div class="row">
+                                        <div class="col-lg-8 d-flex flex-column">
+                                            <div class="row flex-grow">
+                                                <div class="col-12 grid-margin stretch-card">
+                                                    <div class="card card-rounded table-darkBGImg">
+                                                        <div class="card-body">
+                                                            <div class="col-sm-8">
+                                                                <h3 class="text-white upgrade-info mb-0">
+                                                                    Welcome to the <span class="fw-bold">FabLab-webApp</span>
+                                                                </h3>
+                                                                {#                                                                <a href="#" class="btn btn-info upgrade-btn">Upgrade Account!</a>#}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 d-flex flex-column">
+                                            <div class="row flex-grow">
+                                                <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                                                    <div class="card card-rounded">
+                                                        <div class="card-body">
+                                                            <div class="d-sm-flex justify-content-between align-items-start">
+                                                                <div>
+                                                                    <h4 class="card-title card-title-dash">Title</h4>
+                                                                    <h5 class="card-subtitle card-subtitle-dash">Lorem Ipsum is simply dummy text of the printing</h5>
+                                                                </div>
+                                                                <div id="performance-line-legend"></div>
+                                                            </div>
+                                                            <div class="chartjs-wrapper mt-5">
+                                                                <canvas id="performaneLine"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2022 Arteveldehogeschool. All rights reserved. </span>
+                </div>
+            </footer>
+        </div>
+        <!-- main-panel ends -->
     </div>
+    <!-- page-body-wrapper ends -->
 </div>
+<!-- container-scroller -->
+
+<!-- plugins:js -->
+<script src="vendor/js/vendor.bundle.base.js"></script>
+<script src="../web/assets/js/off-canvas.js"></script>
+
 </body>
 </html>
+
