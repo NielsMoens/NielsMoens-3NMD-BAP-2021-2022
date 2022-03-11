@@ -28715,9 +28715,9 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper .brand-logo-mini img {
-  width: calc(70px - 30px);
   max-width: 100%;
   margin: auto;
+  padding-left: 8px;
 }
 
 .navbar .navbar-brand-wrapper .navbar-toggler {
@@ -28780,10 +28780,9 @@ div.tagsinput span.tag a {
 
 @media (max-width: 991px) {
   .navbar .navbar-menu-wrapper {
-    width: calc(100% - 55px);
+
     padding-top: 12px;
     padding-left: 15px;
-    padding-right: 11px;
     height: auto;
   }
 }
@@ -29874,7 +29873,7 @@ div.tagsinput span.tag a {
     flex-direction: row;
   }
   .navbar .navbar-brand-wrapper {
-    width: 55px;
+
   }
   .navbar .navbar-brand-wrapper .navbar-brand.brand-logo {
     display: none;
@@ -29892,7 +29891,7 @@ div.tagsinput span.tag a {
 
 @media (max-width: 480px) {
   .navbar .navbar-brand-wrapper {
-    width: 55px;
+
   }
   .navbar .navbar-brand-wrapper .brand-logo-mini {
     padding-top: 0px;
