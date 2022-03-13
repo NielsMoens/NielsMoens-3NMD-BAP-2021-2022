@@ -1,4 +1,4 @@
-dateModified: 1647121206
+dateModified: 1647196509
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -6,11 +6,17 @@ email:
 meta:
   __names__:
     5c64d819-0d02-4285-a033-940cd7b8e347: Home # Home
-    6db30543-78ca-4e93-917f-45086706d3fa: Default # Default
+    6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
+    6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
-    271ed0fe-b6ba-432c-858e-7be5dba20f18: WelcomeTitle # WelcomeTitle
-    b71257cc-2010-4297-9163-f1f60dd5ac31: Common # Common
+    271ed0fe-b6ba-432c-858e-7be5dba20f18: 'Welcome Title' # Welcome Title
+    0433a068-a333-46ec-ba43-870dfbb5a5c6: Uploads # Uploads
+    901cb110-e555-4e75-8e4f-44e9fbfd0674: 'Canvas Image' # Canvas Image
+    58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
+    a92ff716-3f87-4675-9d88-dbd9975a4910: 'Canvas Info' # Canvas Info
+    b71257cc-2010-4297-9163-f1f60dd5ac31: General # General
+    da445cf6-97b8-410a-9098-fb4ef5859baf: 'Report Problem Info' # Report Problem Info
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
 plugins:
   qrcode:

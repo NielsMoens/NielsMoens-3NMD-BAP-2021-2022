@@ -7,6 +7,6 @@ siteSettings:
   f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
     enabledByDefault: true
     hasUrls: true
-    template: _pages\_home.twig
-    uriFormat: 'homepage/{slug}'
-type: channel
+    template: _pages\home
+    uriFormat: __home__
+type: single

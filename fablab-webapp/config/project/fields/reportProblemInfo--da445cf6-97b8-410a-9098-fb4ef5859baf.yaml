@@ -1,13 +1,13 @@
-columnSuffix: hstivwra
-contentColumnType: text
-fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
-handle: welcomeTitle
+columnSuffix: agxksuvj
+contentColumnType: string(200)
+fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
+handle: reportProblemInfo
 instructions: ''
-name: 'Welcome Title'
+name: 'Report Problem Info'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 50
   code: ''
   columnType: null
   initialRows: '4'

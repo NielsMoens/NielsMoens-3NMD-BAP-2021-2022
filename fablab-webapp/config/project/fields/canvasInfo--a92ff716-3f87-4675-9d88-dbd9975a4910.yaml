@@ -1,9 +1,9 @@
-columnSuffix: hstivwra
+columnSuffix: nofxrgcp
 contentColumnType: text
-fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
-handle: welcomeTitle
+fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
+handle: canvasInfo
 instructions: ''
-name: 'Welcome Title'
+name: 'Canvas Info'
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

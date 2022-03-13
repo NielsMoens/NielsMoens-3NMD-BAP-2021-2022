@@ -1,0 +1,104 @@
+{% extends "_layouts/site" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="home-tab">
+            <div class="tab-content tab-content-basic">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-column">
+                            <div class="row flex-grow">
+                                <div class="col-12 grid-margin stretch-card">
+                                    <div class="card card-rounded table-darkBGImg">
+                                        <div class="card-body">
+                                            <div class="col-sm-12">
+                                                <h3 class="text-white upgrade-info mb-0">
+                                                    {{ entry.welcomeTitle }}
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-column">
+                            <div class="row ">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card card-rounded">
+                                        <div class="card-body">
+                                            <div class="d-sm-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <h5 class="card-subtitle card-subtitle-dash">{{ entry.homeInfo }}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="col-md-7 text-center">
+                                            <h2>Mediums</h2>
+                                        </div>
+                                    </div>
+
+                                    <section class="school-features text-dark d-flex">
+                                        <div class="inner">
+                                            <div class="media d-block feature text-center">
+                                                <img src=" https://paranormax.ga/uploads/_250x250_crop_center-center_80_none/medium3_2022-01-09-200713_ypjr.jpeg" alt="Image placeholder" class="mb-3">
+                                                <div class="media-body">
+                                                    <h3 class="mt-0">abdil Inci </h3>
+                                                    <p>Medium</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
+                                                </div>
+                                            </div>
+                                            <div class="media d-block feature text-center">
+                                                <img src=" https://paranormax.ga/uploads/_250x250_crop_center-center_80_none/medium4_2022-01-21-202548_kvwn.jpg" alt="Image placeholder" class="mb-3">
+                                                <div class="media-body">
+                                                    <h3 class="mt-0">anja smet </h3>
+                                                    <p>Medium</p>
+                                                    <p>hallo ik anja smet</p>
+                                                </div>
+                                            </div>
+
+                                    </section>
+                                </div>
+                                {% set canvasImage =  entry.canvasImage.one() %}
+                                <div class=" col-6">
+                                    <div class="card card-rounded h-10">
+                                        <div class="card-body ">
+                                            <div class=" justify-content-around text-center ">
+                                                <div class="">
+                                                    <img class="img-fluid img-thumbnail" src="{{ canvasImage.url }}" alt="Card image cap">
+                                                </div>
+                                                <h5 class="card-subtitle card-subtitle-dash">{{ entry.reportProblemInfo }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% set reportProblemImage =  entry.reportProblemImage.one() %}
+                                <div class=" col-6" >
+                                    <div class="card card-rounded h-10">
+                                        <div class="card-body">
+                                            <div class="  justify-content-around text-center ">
+                                                <div class=" ">
+                                                    <img class=" img-thumbnail " src="{{ reportProblemImage.url }}" alt="Card image cap">
+                                                </div>
+                                                <h5 class="card-subtitle card-subtitle-dash">{{ entry.reportProblemInfo }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

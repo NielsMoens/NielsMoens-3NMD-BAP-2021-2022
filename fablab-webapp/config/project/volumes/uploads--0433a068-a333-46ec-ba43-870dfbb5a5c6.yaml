@@ -1,5 +1,5 @@
 fieldLayouts:
-  0b90c2e5-a3ae-4719-b806-ee1e1a6c5514:
+  f86441d5-2f59-4176-8e31-8f14b48a9289:
     tabs:
       -
         elements:
@@ -23,16 +23,18 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: default
-hasTitleField: true
-name: Default
-section: 80e4aa5d-eb4f-4829-969a-db66c4f40560 # Homepage
+handle: uploads
+hasUrls: true
+name: Uploads
+settings:
+  path: '@webroot/assets/images'
 sortOrder: 1
-titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: '@web/assets/images'

@@ -1,0 +1,104 @@
+fieldLayouts:
+  0b90c2e5-a3ae-4719-b806-ee1e1a6c5514:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 271ed0fe-b6ba-432c-858e-7be5dba20f18 # Welcome Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: welcome
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 6c0b2789-5e52-41de-84a2-8719c0ad32d7 # Home Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Info Section'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 58426747-4527-4e01-83eb-8fffa431392c # Report Problem Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: da445cf6-97b8-410a-9098-fb4ef5859baf # Report Problem Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'ReportProblem Section'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 901cb110-e555-4e75-8e4f-44e9fbfd0674 # Canvas Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a92ff716-3f87-4675-9d88-dbd9975a4910 # Canvas Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Canvas Section'
+        sortOrder: 4
+handle: homepage
+hasTitleField: false
+name: Homepage
+section: 80e4aa5d-eb4f-4829-969a-db66c4f40560 # Homepage
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
