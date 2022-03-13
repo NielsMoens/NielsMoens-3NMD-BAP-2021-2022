@@ -1,11 +1,15 @@
-dateModified: 1646773635
+dateModified: 1647121206
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    5c64d819-0d02-4285-a033-940cd7b8e347: Home # Home
+    6db30543-78ca-4e93-917f-45086706d3fa: Default # Default
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
+    80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
+    271ed0fe-b6ba-432c-858e-7be5dba20f18: WelcomeTitle # WelcomeTitle
     b71257cc-2010-4297-9163-f1f60dd5ac31: Common # Common
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
 plugins:
@@ -13,12 +17,17 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 0.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true
   name: fablab-webapp
+  retryDuration: null
   schemaVersion: 3.7.33
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Brussels
 users:
   allowPublicRegistration: false
   defaultGroup: null
