@@ -1,13 +1,13 @@
-columnSuffix: agxksuvj
-contentColumnType: string(1020)
+columnSuffix: mtfoigvt
+contentColumnType: text
 fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
-handle: reportProblemInfo
+handle: reportProblemTitle
 instructions: ''
-name: 'Report Problem Info'
+name: 'Report Problem Title '
 searchable: false
 settings:
   byteLimit: null
-  charLimit: 255
+  charLimit: null
   code: ''
   columnType: null
   initialRows: '4'

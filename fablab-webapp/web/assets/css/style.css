@@ -31860,6 +31860,7 @@ div.tagsinput span.tag a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: center;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-right: -15px;
@@ -31894,6 +31895,7 @@ div.tagsinput span.tag a {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+        justify-content: center;
     }
 }
 
@@ -31901,7 +31903,7 @@ div.tagsinput span.tag a {
     .school-features .feature, .school-features .instructor,
     .school-instructors .feature,
     .school-instructors .instructor {
-        position: relative;
+        /*position: relative;*/
         width: 100%;
         min-height: 1px;
         padding-right: 15px;
@@ -31909,27 +31911,11 @@ div.tagsinput span.tag a {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 100%;
     }
 }
 
-@media (min-width: 992px) {
-    .school-features .feature, .school-features .instructor,
-    .school-instructors .feature,
-    .school-instructors .instructor {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
-        padding: 30px;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-    }
-}
+
 
 .school-features .feature h3, .school-features .instructor h3,
 .school-instructors .feature h3,

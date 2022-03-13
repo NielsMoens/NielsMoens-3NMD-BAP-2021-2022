@@ -26,7 +26,7 @@
 
                     <div class="row">
                         <div class="col-lg-12 d-flex flex-column">
-                            <div class="row ">
+                            <div class="row">
                                 <div class="col-lg-12 grid-margin stretch-card">
                                     <div class="card card-rounded">
                                         <div class="card-body">
@@ -38,61 +38,30 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="container">
-                                    <div class="row justify-content-center mb-5">
-                                        <div class="col-md-7 text-center">
-                                            <h2>Mediums</h2>
-                                        </div>
-                                    </div>
-
-                                    <section class="school-features text-dark d-flex">
-                                        <div class="inner">
-                                            <div class="media d-block feature text-center">
-                                                <img src=" https://paranormax.ga/uploads/_250x250_crop_center-center_80_none/medium3_2022-01-09-200713_ypjr.jpeg" alt="Image placeholder" class="mb-3">
-                                                <div class="media-body">
-                                                    <h3 class="mt-0">abdil Inci </h3>
-                                                    <p>Medium</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
-                                                </div>
+                                {% set canvasImage =  entry.canvasImage.one() %}
+                                <div class="col-6">
+                                    <section class="school-features card card-rounded justify-content-around text-dark ">
+                                            <div class="feature card-body text-center">
+                                                <img src=" {{ canvasImage.url }}" alt="Image placeholder" class="">
+                                                <h3 class="pt-1">{{ entry.canvasTitle }}</h3>
+                                                <p>{{ entry.canvasInfo }}</p>
                                             </div>
-                                            <div class="media d-block feature text-center">
-                                                <img src=" https://paranormax.ga/uploads/_250x250_crop_center-center_80_none/medium4_2022-01-21-202548_kvwn.jpg" alt="Image placeholder" class="mb-3">
-                                                <div class="media-body">
-                                                    <h3 class="mt-0">anja smet </h3>
-                                                    <p>Medium</p>
-                                                    <p>hallo ik anja smet</p>
-                                                </div>
-                                            </div>
-
                                     </section>
                                 </div>
-                                {% set canvasImage =  entry.canvasImage.one() %}
-                                <div class=" col-6">
-                                    <div class="card card-rounded h-10">
-                                        <div class="card-body ">
-                                            <div class=" justify-content-around text-center ">
-                                                <div class="">
-                                                    <img class="img-fluid img-thumbnail" src="{{ canvasImage.url }}" alt="Card image cap">
-                                                </div>
-                                                <h5 class="card-subtitle card-subtitle-dash">{{ entry.reportProblemInfo }}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 {% set reportProblemImage =  entry.reportProblemImage.one() %}
-                                <div class=" col-6" >
-                                    <div class="card card-rounded h-10">
-                                        <div class="card-body">
-                                            <div class="  justify-content-around text-center ">
-                                                <div class=" ">
-                                                    <img class=" img-thumbnail " src="{{ reportProblemImage.url }}" alt="Card image cap">
-                                                </div>
-                                                <h5 class="card-subtitle card-subtitle-dash">{{ entry.reportProblemInfo }}</h5>
-                                            </div>
+                                <div class="col-6">
+                                    <section class="school-features card card-rounded justify-content-around text-dark ">
+                                        <div class="feature card-body text-center">
+                                            <a href="#">
+                                                <img src=" {{ reportProblemImage.url }}" alt="Image placeholder" class="">
+                                                <h3 class="pt-1">{{ entry.reportProblemTitle }}</h3>
+                                            </a>
+                                            <p>{{ entry.reportProblemInfo }} </p>
+
                                         </div>
-                                    </div>
+                                    </section>
                                 </div>
+
                             </div>
                         </div>
                     </div>

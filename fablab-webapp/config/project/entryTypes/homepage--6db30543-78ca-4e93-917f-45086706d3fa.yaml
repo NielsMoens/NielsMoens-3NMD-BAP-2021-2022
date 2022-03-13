@@ -62,6 +62,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: f2aca6ca-2bf9-4696-a513-85e119aeaf3d # Report Problem Title 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: da445cf6-97b8-410a-9098-fb4ef5859baf # Report Problem Info
             instructions: null
             label: null
@@ -76,6 +85,15 @@ fieldLayouts:
         elements:
           -
             fieldUid: 901cb110-e555-4e75-8e4f-44e9fbfd0674 # Canvas Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a7d2c8e9-dac9-43f1-8af7-b5d569383c6a # Canvas Title 
             instructions: null
             label: null
             required: false
