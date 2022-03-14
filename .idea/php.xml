@@ -92,6 +92,8 @@
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/dasprid/enum" />
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/mdi/css" />
       <path value="$PROJECT_DIR$/fablab-webapp/vendor/mdi/fonts" />
+      <path value="$PROJECT_DIR$/fablab-webapp/vendor/craftcms/redactor" />
+      <path value="$PROJECT_DIR$/fablab-webapp/vendor/craftcms/html-field" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

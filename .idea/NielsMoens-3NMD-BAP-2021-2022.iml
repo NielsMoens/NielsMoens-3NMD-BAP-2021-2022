@@ -92,6 +92,8 @@
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/dasprid/enum" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/mdi/css" />
       <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/mdi/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/craftcms/redactor" />
+      <excludeFolder url="file://$MODULE_DIR$/fablab-webapp/vendor/craftcms/html-field" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,9 +1,5 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -59,7 +55,7 @@ Deze informatie bron op een gemakkelijke manier beheerbaar maken voor de medewer
 
 * [Craft CMS](https://craftcms.com/)
 * [Bootstrap](https://getbootstrap.com)
-* [Tailwind](https://tailwindcss.com/)
+* [materialdesignicons](https://materialdesignicons.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -118,10 +114,13 @@ Here you find the [design process](https://xd.adobe.com/view/17defd7d-2cdd-4dcb-
 ## Roadmap
 
 - [x] Init project
+- [x] easily scalable for the fablab staff (using craft CMS)
 - [x] add a README
-- [ ] Research & Integrade a QR code generator system
-- [ ] easily scalable for the fablab staff (using craft CMS)
-- [ ] Add Styling (tailwind or bootstrap)
+- [x] Add Styling (tailwind or bootstrap)
+- [ ] Report a problem page (topdesk API)
+- [ ] create custom pages for every machine or tool in the fablab 
+    - [ ] easily add items on the detail pages using craft cms backend 
+- [ ] User Testing
 - [ ] Deployment on Azure servers of Arteveldehs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -129,7 +128,6 @@ Here you find the [design process](https://xd.adobe.com/view/17defd7d-2cdd-4dcb-
 <!-- CONTACT -->
 ## Contact
 Niels Moens - [@nielsmoens](https://www.linkedin.com/in/niels-moens-6b065b134) - nielsmoens.dev@gmail.com
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
