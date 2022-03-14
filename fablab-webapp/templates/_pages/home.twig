@@ -42,10 +42,13 @@
                                 <div class="col-6">
                                     <section class="school-features card card-rounded justify-content-around text-dark ">
                                             <div class="feature card-body text-center">
-                                                <img src=" {{ canvasImage.url }}" alt="Image placeholder" class="">
-                                                <h3 class="pt-1">{{ entry.canvasTitle }}</h3>
+                                                <a href="#">
+                                                    <img src=" {{ canvasImage.url }}" alt="Image placeholder" class="">
+                                                    <h3 class="pt-1">{{ entry.canvasTitle }}</h3>
+                                                </a>
                                                 <p>{{ entry.canvasInfo }}</p>
                                             </div>
+
                                     </section>
                                 </div>
                                 {% set reportProblemImage =  entry.reportProblemImage.one() %}
