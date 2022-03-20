@@ -1,0 +1,27 @@
+{% extends "_layouts/site" %}
+
+{% block content %}
+    <section class="site-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center">
+                    <h2>Assigments</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
+                </div>
+            </div>
+            <div class="row top-course">
+{#                {% set assigment = craft.entries.section('Assigments').orderBy('postDate DESC').limit(20).all %}#}
+{#                {% for assigment in assigment %}#}
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <a href="{{ assigment.url }}" class="course">
+{#                            {% set img = assigment.mainImage.one() %}#}
+                            <img src="">
+                            <h2>test</h2>
+                            <a href="" ><p>Read more ...</p></a>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
