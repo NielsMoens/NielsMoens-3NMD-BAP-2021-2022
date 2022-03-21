@@ -34,7 +34,7 @@
 
     {% for category in entry.categorytitle %}
 
-    <div id="accordion">
+    <div id="accordion" class="mt-2">
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0 d-inline">
@@ -43,7 +43,7 @@
                     </button>
                 </h5>
             </div>
-            <div id="{{ category.categoryName }}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="{{ category.categoryName }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body" id="child1">
                     <div class="card">
                         <div class="card-header">

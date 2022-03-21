@@ -4,19 +4,6 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5 # categoryTitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: categories
-        sortOrder: 1
-      -
-        elements:
-          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -57,8 +44,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'detail Page Content'
+        sortOrder: 1
+      -
+        elements:
           -
-            fieldUid: 700217d0-870e-4a98-904a-f1a0aa353504
+            fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5 # categoryTitle
             instructions: null
             label: null
             required: false
@@ -66,7 +57,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'detail Page Content'
+        name: categories
         sortOrder: 2
 handle: default
 hasTitleField: true

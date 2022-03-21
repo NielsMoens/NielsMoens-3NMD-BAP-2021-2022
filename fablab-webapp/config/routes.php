@@ -22,6 +22,5 @@
 return [
     'machines' => ['template' => 'machines/index'],
     'machines/<slug:{slug}>' => ['template' => 'machines/_entry'],
-    'machines/<slug'
 ];
 
