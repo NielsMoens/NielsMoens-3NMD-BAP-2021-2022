@@ -1,5 +1,5 @@
 fieldLayouts:
-  d76df9b4-b828-45e9-ba3b-fd5e385e12fd:
+  6c9b2567-ae86-4e58-b88e-db3cf34ba3ab:
     tabs:
       -
         elements:
@@ -31,7 +31,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 81b8dc44-6460-4816-b50a-1cbab9279342 # machines
+section: 816718cc-4907-4578-92bc-d8908b6d6404 # machine detail page
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

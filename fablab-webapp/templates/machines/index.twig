@@ -10,15 +10,15 @@
                 </div>
             </div>
             <div class="row top-course">
-{#                {% set assigment = craft.entries.section('Assigments').orderBy('postDate DESC').limit(20).all %}#}
-{#                {% for assigment in assigment %}#}
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <a href="{{ assigment.url }}" class="course">
-{#                            {% set img = assigment.mainImage.one() %}#}
-                            <img src="">
-                            <h2>test</h2>
-                            <a href="" ><p>Read more ...</p></a>
-                        </a>
+                {% set machine = craft.entries.section('machineDetailPage').orderBy('postDate DESC').limit(20).all %}
+                {% for machine in machine %}
+                    <div class="card mt-4" style="">
+                        <img class="card-img-top mt-3" src="https://via.placeholder.com/200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ machine.title }}</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="{{ machine.url }}" class="btn btn-primary">Learn more</a>
+                        </div>
                     </div>
                 {% endfor %}
             </div>

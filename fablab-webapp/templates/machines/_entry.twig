@@ -2,7 +2,7 @@
 
 
 {% block content  %}
-    {% set mainImg = entry.mainImage.one() %}
+{#    {% set mainImg = entry.mainImage.one() %}#}
 
     {#    heading#}
     <section class="site-hero overlay" >
@@ -12,7 +12,7 @@
                     <div class="mb-5 element-animate">
                         <div class="row align-items-center">
                             <div class="col-md-8">
-                                <h1 class="mb-0">tetst</h1>
+                                <h1 class="mb-0">{{ entry.title }}</h1>
 {#                                <p>{{ entry.date|date("short") }}</p>#}
 {#                                <p>Status: {{ entry.assigmentStatus[0]}}</p>#}
 {#                                <p class="lead mb-5">{{ entry.shortDescription }}</p>#}
