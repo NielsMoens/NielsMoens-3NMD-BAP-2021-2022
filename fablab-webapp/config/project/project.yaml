@@ -1,39 +1,49 @@
-dateModified: 1647830781
+dateModified: 1647901829
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1a262c4d-21d5-4f73-a3f7-34711546db34: Machines # Machines
     1eb8fa0c-6d0c-4183-8458-51cb6baa1fa3: Default # Default
     5c64d819-0d02-4285-a033-940cd7b8e347: Home # Home
     6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
+    6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
     6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
-    07ee333a-ca76-4952-9d4c-c92765af6cac: 'section subject' # section subject
+    08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
     15e78e64-3b53-40a0-909d-7ce6fb74158f: ReportProblem # ReportProblem
+    16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     66f566b6-261d-4293-820c-28d42ea78c31: 'detail machine elements' # detail machine elements
     80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
-    81b8dc44-6460-4816-b50a-1cbab9279342: Machines # Machines
-    90e49b5f-07b8-4145-826b-3852c9aebb1f: machinesDetail # machinesDetail
+    90e49b5f-07b8-4145-826b-3852c9aebb1f: 'machines list' # machines list
     271ed0fe-b6ba-432c-858e-7be5dba20f18: 'Welcome Title' # Welcome Title
     0433a068-a333-46ec-ba43-870dfbb5a5c6: Uploads # Uploads
+    440ca2f6-c43c-4a7c-b436-1366abbc1b24: 'machine Image ' # machine Image 
     901cb110-e555-4e75-8e4f-44e9fbfd0674: 'Canvas Image' # Canvas Image
     63968b99-7ac3-452d-9f8e-868915d51c25: 'Section title' # Section title
-    816718cc-4907-4578-92bc-d8908b6d6404: 'machine detail page' # machine detail page
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
     a7d2c8e9-dac9-43f1-8af7-b5d569383c6a: 'Canvas Title ' # Canvas Title 
     a92ff716-3f87-4675-9d88-dbd9975a4910: 'Canvas Info' # Canvas Info
+    af0bfecc-78dd-4e4f-9584-29bbfdd8a269: machines # machines
+    af02201f-2ac4-4372-83a5-6f22229be8b4: categoryTitle # categoryTitle
     b9b9577a-0df2-4f57-bdd4-90cf609c5cff: sub # sub
-    b490d9ca-0967-4003-b6b4-73a67f461f6f: Default # Default
     b71257cc-2010-4297-9163-f1f60dd5ac31: General # General
-    c22d6e9b-90d9-4314-afae-05810883b4b5: 'sub section' # sub section
+    cd306104-2adb-4fa2-b954-16f51bc79e32: 'machine Overview' # machine Overview
+    cf588925-1a01-4ebd-aed0-25bcda088df5: categoryTitle # categoryTitle
     d0e1f59b-03a0-4e5b-90d7-dd95757b4a46: ReportProblem # ReportProblem
+    d1a94db2-ad94-4625-8c00-51eb0986a3f9: 'machine Overview' # machine Overview
+    d6d0473e-3a0b-4c6c-8350-49382ee90d3c: CategoryTypes # CategoryTypes
     da445cf6-97b8-410a-9098-fb4ef5859baf: 'Report Problem Info' # Report Problem Info
     f2aca6ca-2bf9-4696-a513-85e119aeaf3d: 'Report Problem Title ' # Report Problem Title 
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
+    fb749a8b-744b-4404-ae8c-fb5b8ee233c4: Default # Default
+    ff8021a4-7fe4-4b11-b1f2-3f86bee08b16: 'Nozzle ' # Nozzle 
 plugins:
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   qrcode:
     edition: standard
     enabled: true

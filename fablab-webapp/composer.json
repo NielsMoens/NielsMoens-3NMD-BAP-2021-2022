@@ -3,6 +3,7 @@
     "craftcms/cms": "^3.7.26",
     "craftcms/redactor": "2.10.5",
     "kuriousagency/qrcode": "1.0.5",
+    "studioespresso/craft-dumper": "2.0.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
-handle: sectionSubject
+handle: categorytitle
 instructions: ''
-name: 'section subject'
+name: categoryTitle
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_sectionsubject}}'
+  contentTable: '{{%matrixcontent_categorytitle}}'
   maxBlocks: ''
   minBlocks: ''
   propagationKeyFormat: null

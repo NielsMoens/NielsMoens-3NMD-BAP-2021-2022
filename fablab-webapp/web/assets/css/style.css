@@ -20642,9 +20642,9 @@ code {
 }
 
 /* Utilities */
-.grid-margin {
-    margin-bottom: 1.5rem;
-}
+/*.grid-margin {*/
+/*    margin-bottom: 1.5rem;*/
+/*}*/
 
 @media (min-width: 576px) {
     .grid-margin-sm-0 {

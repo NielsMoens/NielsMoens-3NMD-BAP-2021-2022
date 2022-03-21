@@ -1,5 +1,6 @@
+defaultPlacement: end
 fieldLayouts:
-  d76df9b4-b828-45e9-ba3b-fd5e385e12fd:
+  10298379-cf29-4ad3-9ccb-06a924012010:
     tabs:
       -
         elements:
@@ -23,16 +24,18 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\TitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-handle: machines
-hasTitleField: true
-name: Machines
-section: 81b8dc44-6460-4816-b50a-1cbab9279342 # Machines
-sortOrder: 1
-titleFormat: null
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: nozzle
+name: 'Nozzle '
+siteSettings:
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
+    hasUrls: true
+    template: null
+    uriFormat: 'nozzle/{slug}'
+structure:
+  maxLevels: null
+  uid: bbda6d3b-3eba-4cf2-b921-35c76cf10c98

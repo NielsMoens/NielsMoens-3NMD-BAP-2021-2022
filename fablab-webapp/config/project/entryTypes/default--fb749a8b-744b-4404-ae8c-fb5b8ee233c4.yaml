@@ -1,6 +1,19 @@
 fieldLayouts:
-  a4a954c4-b878-4c55-b362-f3878d297e99:
+  1d8fdefc-e401-46b9-a527-4bcff7d8fd22:
     tabs:
+      -
+        elements:
+          -
+            fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5 # categoryTitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: categories
+        sortOrder: 1
       -
         elements:
           -
@@ -27,7 +40,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 07ee333a-ca76-4952-9d4c-c92765af6cac # section subject
+            fieldUid: 440ca2f6-c43c-4a7c-b436-1366abbc1b24 # machine Image 
             instructions: null
             label: null
             required: false
@@ -36,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 901cb110-e555-4e75-8e4f-44e9fbfd0674 # Canvas Image
+            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # detail Text
             instructions: null
             label: null
             required: false
@@ -44,13 +57,22 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
-handle: subSection
+          -
+            fieldUid: 700217d0-870e-4a98-904a-f1a0aa353504
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'detail Page Content'
+        sortOrder: 2
+handle: default
 hasTitleField: true
-name: 'sub section'
-section: 90e49b5f-07b8-4145-826b-3852c9aebb1f # machinesDetail
-sortOrder: 2
-titleFormat: null
+name: Default
+section: af0bfecc-78dd-4e4f-9584-29bbfdd8a269 # machines
+sortOrder: 1
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

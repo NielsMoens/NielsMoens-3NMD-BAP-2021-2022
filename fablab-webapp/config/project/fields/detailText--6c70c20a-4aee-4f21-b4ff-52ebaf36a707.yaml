@@ -1,0 +1,19 @@
+columnSuffix: iaukbyrn
+contentColumnType: text
+fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
+handle: detailText
+instructions: ''
+name: 'detail Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

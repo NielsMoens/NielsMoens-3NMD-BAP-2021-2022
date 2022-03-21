@@ -1,0 +1,12 @@
+siteUid: null
+sortOrder: 1
+template: machine/_entry
+uriParts:
+  1:
+    - '*'
+    - '[^\/]+'
+  2: /
+  3:
+    - slug
+    - '[^\/]+'
+uriPattern: '<any:[^\/]+>/<slug:[^\/]+>'

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6be2de68e85512af660a1a2354b0c9da",
+    "content-hash": "035fff633fdcbce7c2bd0a435a24a607",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -291,11 +291,11 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.2.9",
+            "version": "3.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/a951f614bd64dcd26137bc9b7b2637ddcfc57649",
-                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649",
+                "url": "https://api.github.com/repos/composer/semver/zipball/5d8e574bb0e69188786b8ef77d43341222a41a71",
+                "reference": "5d8e574bb0e69188786b8ef77d43341222a41a71",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +339,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2022-02-04T13:58:43+00:00"
+            "time": "2022-03-16T11:22:07+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -430,11 +430,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.36",
+            "version": "3.7.37",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
-                "reference": "4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/1bcf1e9170f0024b888251dd204958989aca296b",
+                "reference": "1bcf1e9170f0024b888251dd204958989aca296b",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +518,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2022-03-03T17:34:56+00:00"
+            "time": "2022-03-16T18:56:11+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -1144,11 +1144,11 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -1174,12 +1174,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "license": [
                 "MIT"
@@ -1233,7 +1233,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1294,11 +1294,11 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -1317,7 +1317,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1376,7 +1376,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1691,6 +1691,36 @@
                 "zf"
             ],
             "time": "2020-09-14T14:23:00+00:00"
+        },
+        {
+            "name": "larapack/dd",
+            "version": "1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/larapack/dd/zipball/561b5111a13d0094b59b5c81b1572489485fb948",
+                "reference": "561b5111a13d0094b59b5c81b1572489485fb948",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/var-dumper": "*"
+            },
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Topper",
+                    "email": "hi@webman.io"
+                }
+            ],
+            "description": "`dd` is a helper method in Laravel. This package will add the `dd` to your application.",
+            "time": "2016-12-15T09:34:34+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2660,6 +2690,58 @@
                 "phar"
             ],
             "time": "2021-12-10T11:20:11+00:00"
+        },
+        {
+            "name": "studioespresso/craft-dumper",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studioespresso/craft3-dumper/zipball/ad0e8bdc11005b5049b6d852cfe802e312d32618",
+                "reference": "ad0e8bdc11005b5049b6d852cfe802e312d32618",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.29",
+                "larapack/dd": ">=1.1",
+                "twig/twig": ">=2.11.3 <3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Dumper",
+                "handle": "dumper",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/studioespresso/craft3-dumper/master/CHANGELOG.md",
+                "class": "studioespresso\\craftdumper\\CraftDumper"
+            },
+            "autoload": {
+                "psr-4": {
+                    "studioespresso\\craftdumper\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Studio Espresso",
+                    "homepage": "https://studioespresso.co"
+                }
+            ],
+            "description": "Bringing larapack/dd to Craft 3",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "dumper"
+            ],
+            "support": {
+                "docs": "https://github.com/studioespresso/craft3-dumper/blob/master/README.md",
+                "issues": "https://github.com/studioespresso/craft3-dumper/issues"
+            },
+            "time": "2019-06-20T10:52:28+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3752,6 +3834,65 @@
                 "utf8"
             ],
             "time": "2022-01-02T09:53:40+00:00"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v5.4.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/294e9da6e2e0dd404e983daa5aa74253d92c05d0",
+                "reference": "294e9da6e2e0dd404e983daa5aa74253d92c05d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<5.4.3",
+                "symfony/console": "<4.4"
+            },
+            "suggest": {
+                "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+                "ext-intl": "To show region name in time zone dump",
+                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+            },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2022-03-02T12:42:23+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -4883,95 +5024,6 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.10.12"
             },
             "time": "2021-11-30T14:05:36+00:00"
-        },
-        {
-            "name": "symfony/var-dumper",
-            "version": "v5.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "294e9da6e2e0dd404e983daa5aa74253d92c05d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/294e9da6e2e0dd404e983daa5aa74253d92c05d0",
-                "reference": "294e9da6e2e0dd404e983daa5aa74253d92c05d0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "conflict": {
-                "phpunit/phpunit": "<5.4.3",
-                "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "ext-iconv": "*",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0",
-                "symfony/uid": "^5.1|^6.0",
-                "twig/twig": "^2.13|^3.0.4"
-            },
-            "suggest": {
-                "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
-                "ext-intl": "To show region name in time zone dump",
-                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
-            },
-            "bin": [
-                "Resources/bin/var-dump-server"
-            ],
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "Resources/functions/dump.php"
-                ],
-                "psr-4": {
-                    "Symfony\\Component\\VarDumper\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides mechanisms for walking through any arbitrary PHP variable",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "debug",
-                "dump"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.6"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-03-02T12:42:23+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",

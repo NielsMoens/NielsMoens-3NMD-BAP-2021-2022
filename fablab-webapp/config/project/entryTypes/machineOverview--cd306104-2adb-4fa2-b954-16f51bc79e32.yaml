@@ -1,5 +1,5 @@
 fieldLayouts:
-  6c9b2567-ae86-4e58-b88e-db3cf34ba3ab:
+  d58dda5d-0255-4dea-9d67-aba041ded8f5:
     tabs:
       -
         elements:
@@ -28,11 +28,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: default
+handle: machineOverview
 hasTitleField: true
-name: Default
-section: 816718cc-4907-4578-92bc-d8908b6d6404 # machine detail page
+name: 'machine Overview'
+section: d1a94db2-ad94-4625-8c00-51eb0986a3f9 # machine Overview
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

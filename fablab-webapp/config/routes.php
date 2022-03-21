@@ -18,6 +18,10 @@
  * set to the value `2012`.
  */
 
-return [
 
+return [
+    'machines' => ['template' => 'machines/index'],
+    'machines/<slug:{slug}>' => ['template' => 'machines/_entry'],
+    'machines/<slug'
 ];
+

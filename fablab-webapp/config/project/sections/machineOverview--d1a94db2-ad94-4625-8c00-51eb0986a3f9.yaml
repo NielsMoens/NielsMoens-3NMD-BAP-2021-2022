@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: machineDetailPage
-name: 'machine detail page'
+handle: machineOverview
+name: 'machine Overview'
 propagationMethod: all
 siteSettings:
   f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
     enabledByDefault: true
     hasUrls: true
-    template: machines/_entry
-    uriFormat: 'machines/{slug}'
-type: channel
+    template: machines\index.twig
+    uriFormat: machineOverview
+type: single
