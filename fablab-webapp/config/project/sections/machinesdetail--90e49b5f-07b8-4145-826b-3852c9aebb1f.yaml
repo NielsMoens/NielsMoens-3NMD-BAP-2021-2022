@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: machinesdetail
+name: machinesDetail
+propagationMethod: all
+siteSettings:
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
+    enabledByDefault: true
+    hasUrls: true
+    template: machines/_entry
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 8e3345d6-eb4d-4cfd-aba7-291b238583b9
+type: structure

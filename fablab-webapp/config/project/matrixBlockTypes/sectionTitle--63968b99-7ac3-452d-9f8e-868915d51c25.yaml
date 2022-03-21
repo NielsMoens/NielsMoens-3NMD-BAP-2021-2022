@@ -1,0 +1,43 @@
+field: 07ee333a-ca76-4952-9d4c-c92765af6cac # section subject
+fieldLayouts:
+  fab92ed8-5d8c-49c2-9835-9244355e9292:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b9b9577a-0df2-4f57-bdd4-90cf609c5cff # sub
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+fields:
+  b9b9577a-0df2-4f57-bdd4-90cf609c5cff: # sub
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: sub
+    instructions: ''
+    name: sub
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'home '
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: true
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: sectionTitle
+name: 'Section title'
+sortOrder: 1

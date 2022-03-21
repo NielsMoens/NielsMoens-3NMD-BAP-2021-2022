@@ -1,27 +1,36 @@
 {% extends "_layouts/site" %}
 
 {% block content %}
-    <section class="site-section bg-light">
+
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center">
-                    <h2>Assigments</h2>
+                    <h2>Machine list Overview (todo make dynamic) </h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
                 </div>
             </div>
-            <div class="row top-course">
-                {% set machine = craft.entries.section('machineDetailPage').orderBy('postDate DESC').limit(20).all %}
-                {% for machine in machine %}
-                    <div class="card mt-4" style="">
-                        <img class="card-img-top mt-3" src="https://via.placeholder.com/200" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ machine.title }}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="{{ machine.url }}" class="btn btn-primary">Learn more</a>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-column">
+                    <div class="row">
+                       {% set machine = craft.entries.section('machineDetailPage').orderBy('postDate DESC').limit(20).all %}
+                        {% for machine in machine %}
+                        <div class="col-lg-2">
+                            <section class=" card card-rounded justify-content-around text-dark ">
+                                <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
+                                    <img class="card-img-top rounded-2" src="https://via.placeholder.com/200" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ machine.title }}</h5>
+
+                                        <a href="{{ machine.url }}" class="btn btn-primary">Learn more</a>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
+                        {% endfor %}
                     </div>
-                {% endfor %}
+                </div>
             </div>
         </div>
-    </section>
+
 {% endblock %}

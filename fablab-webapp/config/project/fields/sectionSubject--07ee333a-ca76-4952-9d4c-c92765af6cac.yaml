@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
+handle: sectionSubject
+instructions: ''
+name: 'section subject'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_sectionsubject}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
