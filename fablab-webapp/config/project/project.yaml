@@ -1,4 +1,4 @@
-dateModified: 1647903095
+dateModified: 1658000787
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -11,7 +11,6 @@ meta:
     6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
     6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
-    15e78e64-3b53-40a0-909d-7ce6fb74158f: ReportProblem # ReportProblem
     16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     66f566b6-261d-4293-820c-28d42ea78c31: 'detail machine elements' # detail machine elements
@@ -21,6 +20,8 @@ meta:
     0433a068-a333-46ec-ba43-870dfbb5a5c6: Uploads # Uploads
     440ca2f6-c43c-4a7c-b436-1366abbc1b24: 'machine Image ' # machine Image 
     901cb110-e555-4e75-8e4f-44e9fbfd0674: 'Canvas Image' # Canvas Image
+    17549f22-b84a-4efa-8f4d-e83d65584584: Default # Default
+    19621fb7-4303-43d5-82d3-f19d17cd5a89: locations # locations
     63968b99-7ac3-452d-9f8e-868915d51c25: 'Section title' # Section title
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
     a7d2c8e9-dac9-43f1-8af7-b5d569383c6a: 'Canvas Title ' # Canvas Title 
@@ -31,10 +32,10 @@ meta:
     b71257cc-2010-4297-9163-f1f60dd5ac31: General # General
     cd306104-2adb-4fa2-b954-16f51bc79e32: 'machine Overview' # machine Overview
     cf588925-1a01-4ebd-aed0-25bcda088df5: categoryTitle # categoryTitle
-    d0e1f59b-03a0-4e5b-90d7-dd95757b4a46: ReportProblem # ReportProblem
     d1a94db2-ad94-4625-8c00-51eb0986a3f9: 'machine Overview' # machine Overview
     d6d0473e-3a0b-4c6c-8350-49382ee90d3c: CategoryTypes # CategoryTypes
     da445cf6-97b8-410a-9098-fb4ef5859baf: 'Report Problem Info' # Report Problem Info
+    ea094efa-4993-4290-b643-ebdfd83a3b5e: safety # safety
     f2aca6ca-2bf9-4696-a513-85e119aeaf3d: 'Report Problem Title ' # Report Problem Title 
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
     fb749a8b-744b-4404-ae8c-fb5b8ee233c4: Default # Default

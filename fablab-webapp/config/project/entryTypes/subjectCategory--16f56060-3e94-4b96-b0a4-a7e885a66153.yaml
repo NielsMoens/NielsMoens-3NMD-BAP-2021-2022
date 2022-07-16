@@ -4,6 +4,15 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # detail Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5 # categoryTitle
             instructions: null
             label: null
