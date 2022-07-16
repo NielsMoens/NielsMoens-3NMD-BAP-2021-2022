@@ -13,17 +13,15 @@
             <div class="row">
                 <div class="col-lg-12 d-flex flex-column">
                     <div class="row">
-                       {% set machines = craft.entries.section('machinesList').level(1) %}
+                       {% set locations = craft.entries.section('locations').level(1).all  %}
 
-                        {% for machine in machines %}
+                        {% for location in locations %}
                         <div class="col-lg-4">
                             <section class=" card card-rounded justify-content-around text-dark ">
                                 <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
                                     <img class="card-img-top rounded-2" src="https://via.placeholder.com/200" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">{{ machine.title }}</h5>
-
-                                        <a href="{{ machine.url }}" class="btn btn-primary">Learn more</a>
+                                        <h5 class="card-title">{{ location.title }}</h5>
                                     </div>
                                 </div>
                             </section>

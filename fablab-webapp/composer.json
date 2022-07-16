@@ -3,7 +3,12 @@
     "craftcms/cms": "^3.7.26",
     "craftcms/redactor": "2.10.5",
     "kuriousagency/qrcode": "1.0.5",
+    "mmikkel/reasons": "2.3.1",
+    "nystudio107/craft-richvariables": "1.0.31",
+    "page-8/craft-manytomany": "1.0.2.2",
     "studioespresso/craft-dumper": "2.0.0",
+    "verbb/field-manager": "2.2.5",
+    "verbb/super-table": "2.7.2",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

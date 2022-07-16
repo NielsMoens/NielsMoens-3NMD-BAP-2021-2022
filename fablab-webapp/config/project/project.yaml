@@ -1,4 +1,4 @@
-dateModified: 1658000787
+dateModified: 1658010195
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -10,8 +10,11 @@ meta:
     6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
     6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
     6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
+    7add9c0f-f1dd-4e3d-a45a-4ad6885643a8: machine # machine
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
+    9e563a8a-d152-4f8c-8f9b-09e69187f925: safety # safety
     16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
+    38bbbab6-24e7-43a3-b563-04ac81b027c4: many-to-many # many-to-many
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     66f566b6-261d-4293-820c-28d42ea78c31: 'detail machine elements' # detail machine elements
     80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
@@ -30,11 +33,11 @@ meta:
     af02201f-2ac4-4372-83a5-6f22229be8b4: categoryTitle # categoryTitle
     b9b9577a-0df2-4f57-bdd4-90cf609c5cff: sub # sub
     b71257cc-2010-4297-9163-f1f60dd5ac31: General # General
-    cd306104-2adb-4fa2-b954-16f51bc79e32: 'machine Overview' # machine Overview
     cf588925-1a01-4ebd-aed0-25bcda088df5: categoryTitle # categoryTitle
-    d1a94db2-ad94-4625-8c00-51eb0986a3f9: 'machine Overview' # machine Overview
     d6d0473e-3a0b-4c6c-8350-49382ee90d3c: CategoryTypes # CategoryTypes
     da445cf6-97b8-410a-9098-fb4ef5859baf: 'Report Problem Info' # Report Problem Info
+    db37d21f-e9bc-46f3-89dc-1bb2bb236dc3: machines # machines
+    dfe00044-f498-4f5b-826c-65726e7e3abc: machine # machine
     ea094efa-4993-4290-b643-ebdfd83a3b5e: safety # safety
     f2aca6ca-2bf9-4696-a513-85e119aeaf3d: 'Report Problem Title ' # Report Problem Title 
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
@@ -45,16 +48,37 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  manytomany:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
   qrcode:
     edition: standard
     enabled: true
     schemaVersion: 0.0.1
+  reasons:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.1
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  rich-variables:
+    edition: standard
+    enabled: true
+    licenseKey: 3OF2G8KXLWD9ROSPR5WMWIX2
+    schemaVersion: 1.0.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: fablab-webapp
   retryDuration: null

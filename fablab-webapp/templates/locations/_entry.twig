@@ -2,12 +2,12 @@
 
 {% block content  %}
 
-    {% set machines = craft.entries.section('machinesList').level(2) %}
-    {% set machine = cr
+    {% set location = craft.entries.section('locations').level(2) %}
 
     <div class="row">
         <div class="col-lg-12 d-flex flex-column mt-4">
             <div class="row">
+
                 <div class="col-lg-5">
                     <section class=" card card-rounded justify-content-around text-dark ">
                         <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
@@ -73,6 +73,7 @@
                         <div class="row align-items-center">
                             <div class="col-md-8">
                                 {% for machine in machines %}
+                                    {{ dump(machine) }}
                                     <h1 class="mb-0">{{ machine.title }}</h1>
                                 {% endfor %}
                             </div>
