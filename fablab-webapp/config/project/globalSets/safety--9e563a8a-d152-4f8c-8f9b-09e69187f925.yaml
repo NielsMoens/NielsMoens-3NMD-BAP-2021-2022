@@ -1,0 +1,19 @@
+fieldLayouts:
+  a8c29939-8267-4b0e-9eb2-0db008a514e2:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # detail Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'safety '
+        sortOrder: 1
+handle: safety
+name: safety
+sortOrder: 1

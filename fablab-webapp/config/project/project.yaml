@@ -1,4 +1,4 @@
-dateModified: 1658010195
+dateModified: 1658095384
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -7,10 +7,12 @@ meta:
   __names__:
     1eb8fa0c-6d0c-4183-8458-51cb6baa1fa3: Default # Default
     5c64d819-0d02-4285-a033-940cd7b8e347: Home # Home
+    6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d: locations # locations
     6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
     6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
     6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
     7add9c0f-f1dd-4e3d-a45a-4ad6885643a8: machine # machine
+    7c9f2036-f424-4156-b700-4c50700e96b7: 'locations Title' # locations Title
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
     9e563a8a-d152-4f8c-8f9b-09e69187f925: safety # safety
     16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
@@ -26,6 +28,8 @@ meta:
     17549f22-b84a-4efa-8f4d-e83d65584584: Default # Default
     19621fb7-4303-43d5-82d3-f19d17cd5a89: locations # locations
     63968b99-7ac3-452d-9f8e-868915d51c25: 'Section title' # Section title
+    778103a3-d3ce-4b8c-8ee3-6a120d9af162: 'machine Location' # machine Location
+    950940db-3479-4e9b-807b-edb6561ed0f9: Locations # Locations
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
     a7d2c8e9-dac9-43f1-8af7-b5d569383c6a: 'Canvas Title ' # Canvas Title 
     a92ff716-3f87-4675-9d88-dbd9975a4910: 'Canvas Info' # Canvas Info

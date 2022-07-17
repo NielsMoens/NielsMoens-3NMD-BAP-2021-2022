@@ -50,6 +50,19 @@ fieldLayouts:
             width: 100
         name: 'Info Section'
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 7c9f2036-f424-4156-b700-4c50700e96b7 # locations Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Locations
+        sortOrder: 3
 handle: homepage
 hasTitleField: false
 name: Homepage

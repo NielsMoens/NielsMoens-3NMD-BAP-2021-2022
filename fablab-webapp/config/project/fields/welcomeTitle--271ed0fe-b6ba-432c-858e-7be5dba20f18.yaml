@@ -1,0 +1,19 @@
+columnSuffix: hstivwra
+contentColumnType: text
+fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
+handle: welcomeTitle
+instructions: ''
+name: 'Welcome Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

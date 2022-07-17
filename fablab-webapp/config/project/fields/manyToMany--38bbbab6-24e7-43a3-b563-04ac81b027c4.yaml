@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
+handle: manyToMany
+instructions: ''
+name: many-to-many
+searchable: false
+settings:
+  singleField: '19'
+  source:
+    __assoc__:
+      -
+        - value
+        - '10'
+      -
+        - type
+        - section
+translationKeyFormat: null
+translationMethod: none
+type: Page8\ManyToMany\fields\ManyToManyField

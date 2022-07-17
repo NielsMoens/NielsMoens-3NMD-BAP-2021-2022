@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  4c024e4d-29d2-4d58-8088-107c9937ff2b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: machine
+name: machine
+siteSettings:
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
+    hasUrls: true
+    template: null
+    uriFormat: 'machine/{slug}'
+structure:
+  maxLevels: null
+  uid: b99e151e-e420-4e8b-8406-7c46fd30dbcf

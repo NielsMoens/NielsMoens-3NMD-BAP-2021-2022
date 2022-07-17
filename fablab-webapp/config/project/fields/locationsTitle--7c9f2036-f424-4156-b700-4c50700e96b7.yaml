@@ -1,0 +1,19 @@
+columnSuffix: lmxoemed
+contentColumnType: string(1020)
+fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
+handle: locationsTitle
+instructions: ''
+name: 'locations Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'Write a title for the locations'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
