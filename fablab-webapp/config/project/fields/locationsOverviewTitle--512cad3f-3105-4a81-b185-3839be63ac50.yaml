@@ -1,0 +1,19 @@
+columnSuffix: wudrsdkc
+contentColumnType: string(1020)
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: locationsOverviewTitle
+instructions: 'Fill in the title you want on the locations overview page '
+name: 'Locations Overview Title '
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

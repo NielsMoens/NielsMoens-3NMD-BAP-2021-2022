@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a3d83619-8019-4c63-8902-c7a368e044be # address
+            fieldUid: a3d83619-8019-4c63-8902-c7a368e044be # Location Address
             instructions: null
             label: null
             required: false

@@ -1,4 +1,4 @@
-dateModified: 1658174625
+dateModified: 1658183718
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -10,11 +10,12 @@ meta:
     6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d: locations # locations
     6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
     6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
+    6d8ae871-ae05-4015-befa-2067e9ed8910: locationImage # locationImage
     6db30543-78ca-4e93-917f-45086706d3fa: Homepage # Homepage
     6ef1d014-6a1a-4801-a997-80bd5686a24d: 'Card Title ' # Card Title 
     7add9c0f-f1dd-4e3d-a45a-4ad6885643a8: machine # machine
     7c9f2036-f424-4156-b700-4c50700e96b7: 'locations Title' # locations Title
-    8a11ff46-6934-4c8a-ba67-76eee055fbfc: Default # Default
+    8a11ff46-6934-4c8a-ba67-76eee055fbfc: Locations # Locations
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
     9e563a8a-d152-4f8c-8f9b-09e69187f925: safety # safety
     16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
@@ -23,11 +24,13 @@ meta:
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     66f566b6-261d-4293-820c-28d42ea78c31: machines # machines
     80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
+    84cca4ae-aa2e-4759-a1f1-c1946eed4767: 'locations Overview Description' # locations Overview Description
     90e49b5f-07b8-4145-826b-3852c9aebb1f: 'machines list' # machines list
     271ed0fe-b6ba-432c-858e-7be5dba20f18: 'Welcome Title' # Welcome Title
     0433a068-a333-46ec-ba43-870dfbb5a5c6: Uploads # Uploads
     440ca2f6-c43c-4a7c-b436-1366abbc1b24: 'machine Image ' # machine Image 
     493bc15e-78ef-4169-a8e1-7c60b35441bc: 'opening hours' # opening hours
+    512cad3f-3105-4a81-b185-3839be63ac50: 'Locations Overview Title ' # Locations Overview Title 
     9639da72-9f64-4038-8ff5-2e80c35743aa: 'Info Grid' # Info Grid
     17549f22-b84a-4efa-8f4d-e83d65584584: Default # Default
     19621fb7-4303-43d5-82d3-f19d17cd5a89: locationsss # locationsss
@@ -35,7 +38,7 @@ meta:
     778103a3-d3ce-4b8c-8ee3-6a120d9af162: 'Machines On Location' # Machines On Location
     950940db-3479-4e9b-807b-edb6561ed0f9: Locations # Locations
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
-    a3d83619-8019-4c63-8902-c7a368e044be: address # address
+    a3d83619-8019-4c63-8902-c7a368e044be: 'Location Address' # Location Address
     a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7: 'Card link' # Card link
     af0bfecc-78dd-4e4f-9584-29bbfdd8a269: machines # machines
     b9b9577a-0df2-4f57-bdd4-90cf609c5cff: sub # sub
