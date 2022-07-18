@@ -35,10 +35,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: welcome
-        sortOrder: 1
-      -
-        elements:
           -
             fieldUid: 6c0b2789-5e52-41de-84a2-8719c0ad32d7 # Home Info
             instructions: null
@@ -48,12 +44,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Info Section'
-        sortOrder: 2
+        name: 'welcome section'
+        sortOrder: 1
       -
         elements:
           -
-            fieldUid: 7c9f2036-f424-4156-b700-4c50700e96b7 # locations Title
+            fieldUid: 0033a93a-5f40-4e37-a832-6e2ff1d68222 # Info Grid 
             instructions: null
             label: null
             required: false
@@ -61,8 +57,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Locations
-        sortOrder: 3
+        name: 'Info Grid'
+        sortOrder: 2
 handle: homepage
 hasTitleField: false
 name: Homepage

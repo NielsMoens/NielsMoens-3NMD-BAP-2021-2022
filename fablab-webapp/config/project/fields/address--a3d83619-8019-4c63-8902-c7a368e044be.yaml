@@ -1,9 +1,9 @@
-columnSuffix: rteeeryj
+columnSuffix: eegsokwa
 contentColumnType: text
-fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
-handle: canvasTitle
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: address
 instructions: ''
-name: 'Canvas Title '
+name: address
 searchable: false
 settings:
   byteLimit: null
@@ -11,7 +11,7 @@ settings:
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

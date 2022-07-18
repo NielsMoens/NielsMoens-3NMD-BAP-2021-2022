@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5 # categoryTitle
+            fieldUid: cf588925-1a01-4ebd-aed0-25bcda088df5
             instructions: null
             label: null
             required: false

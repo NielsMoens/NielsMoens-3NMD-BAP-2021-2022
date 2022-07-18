@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: locations
-name: locations
+handle: locationsss
+name: locationsss
 propagationMethod: all
 siteSettings:
   f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp

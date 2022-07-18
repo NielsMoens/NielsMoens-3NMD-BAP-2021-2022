@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
-handle: categorytitle
+fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
+handle: infoGrid
 instructions: ''
-name: categoryTitle
+name: 'Info Grid '
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_categorytitle}}'
+  contentTable: '{{%matrixcontent_infogrid}}'
   maxBlocks: ''
   minBlocks: ''
   propagationKeyFormat: null

@@ -1,24 +1,22 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
-handle: categorytypes
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: machinesOnLocation
 instructions: ''
-name: CategoryTypes
+name: 'Machines On Location'
 searchable: false
 settings:
-  allowLimit: false
-  allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: ''
-  limit: null
+  limit: ''
   localizeRelations: false
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   source: null
-  sources: '*'
+  sources:
+    - 'section:af0bfecc-78dd-4e4f-9584-29bbfdd8a269' # machines
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Categories
+type: craft\fields\Entries

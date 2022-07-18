@@ -11,7 +11,7 @@
                         <div class="col-lg-12 d-flex flex-column">
                             <div class="row flex-grow">
                                 <div class="col-12 grid-margin stretch-card">
-                                    <div class="card card-rounded table-darkBGImg">
+                                    <div class="card card-rounded bg-primary">
                                         <div class="card-body">
                                             <div class="col-sm-12">
                                                 <h3 class="text-white upgrade-info mb-0">
@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12 d-flex flex-column">
+                        <div class="col-lg-12 d-flex flex-column mt-3">
                             <div class="row">
                                 <div class="col-lg-12 grid-margin stretch-card">
                                     <div class="card card-rounded">
@@ -42,17 +42,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <section class=" card card-rounded justify-content-around text-dark ">
-                            <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                                <div class="card-body">
-                                    <h5 class="card-title"> </h5>
-                                    <a href="{{ siteUrl }}locations" class="btn btn-primary">Learn more</a>
-                                </div>
+                    <div class="row d-flex justify-content-center ">
+                        {% for infoGridBlock in entry.infoGrid%}
+                            {% set thumbnail = infoGridBlock.cardThumbnail.one() %}
+                            {% set cropSettings = {
+                                mode: 'crop',
+                                width: '50%',
+                                height: '30%',
+                                quality: 80
+                            } %}
+
+                            <div class="col-lg-3 mt-3">
+                                <section class=" card card-rounded justify-content-around text-dark ">
+                                    <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
+                                        <div class="card-body">
+                                            <a href="{{ infoGridBlock.cardLink }}"><img class="card-img-top rounded-2 img-fluid " src="{{ thumbnail.getUrl(cropSettings) }}" alt="Card image cap"></a>
+                                            <h5 class="card-title">{{ infoGridBlock.cardTitle}} </h5>
+                                            <a href="{{ infoGridBlock.cardLink }}" class="btn btn-primary p-3 ">{{ infoGridBlock.buttonLinkText }}</a>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                        </section>
+                        {% endfor %}
                     </div>
-                </div>
             </div>
         </div>
     </div>

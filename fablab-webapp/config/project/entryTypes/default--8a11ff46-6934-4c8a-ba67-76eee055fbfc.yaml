@@ -1,5 +1,5 @@
 fieldLayouts:
-  acd1cb98-1f62-460e-9aa2-a0d3e17fb4e0:
+  ab447c40-28ab-4d56-8c01-25a3238769c7:
     tabs:
       -
         elements:
@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: ''
-            label: __blank__
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -27,7 +27,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: db37d21f-e9bc-46f3-89dc-1bb2bb236dc3 # machines
+            fieldUid: a3d83619-8019-4c63-8902-c7a368e044be # address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 493bc15e-78ef-4169-a8e1-7c60b35441bc # opening hours
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 778103a3-d3ce-4b8c-8ee3-6a120d9af162 # Machines On Location
             instructions: null
             label: null
             required: false
@@ -37,11 +55,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: machine
+handle: default
 hasTitleField: true
-name: machine
-section: 19621fb7-4303-43d5-82d3-f19d17cd5a89 # locations
-sortOrder: 3
+name: Default
+section: dcaea295-d65f-4a92-a262-d60c36f61870 # locations
+sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

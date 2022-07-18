@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center">
-                    <h2>Machine list Overview (todo make dynamic) </h2>
+                    <h2>Locations overview </h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
                 </div>
             </div>
@@ -13,19 +13,20 @@
             <div class="row">
                 <div class="col-lg-12 d-flex flex-column">
                     <div class="row">
-                       {% set locations = craft.entries.section('locations').level(1).all  %}
+                       {% set locations = craft.entries.section('locations')  %}
 
                         {% for location in locations %}
-                        <div class="col-lg-4">
-                            <section class=" card card-rounded justify-content-around text-dark ">
-                                <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                                    <img class="card-img-top rounded-2" src="https://via.placeholder.com/200" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">{{ location.title }}</h5>
+                            <div class="col-lg-4">
+                                <section class=" card card-rounded justify-content-around text-dark ">
+                                    <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
+                                        <img class="card-img-top rounded-2" src="https://via.placeholder.com/200" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ location.title }}</h5>
+                                            <a href="{{ location.url }}" class="btn btn-primary">Learn more</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
-                        </div>
+                                </section>
+                            </div>
                         {% endfor %}
                     </div>
                 </div>

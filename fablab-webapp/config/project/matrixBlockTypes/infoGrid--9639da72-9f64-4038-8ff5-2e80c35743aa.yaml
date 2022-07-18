@@ -1,0 +1,138 @@
+field: 0033a93a-5f40-4e37-a832-6e2ff1d68222 # Info Grid 
+fieldLayouts:
+  c6956fb7-21f8-4dc2-ac88-a2579e5614a3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c247021a-bb7b-4237-b3bc-b24e695267b7 # Card Thumbnail
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6ef1d014-6a1a-4801-a997-80bd5686a24d # Card Title 
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d0d78113-f6d1-4750-af4e-cdd603d4a59a # Button Link text 
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7 # Card link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6ef1d014-6a1a-4801-a997-80bd5686a24d: # Card Title 
+    columnSuffix: tscnkjdo
+    contentColumnType: string(240)
+    fieldGroup: null
+    handle: cardTitle
+    instructions: 'Fill in a card title '
+    name: 'Card Title '
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 60
+      code: ''
+      columnType: null
+      initialRows: '3'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7: # Card link
+    columnSuffix: kluxqqsl
+    contentColumnType: string(1000)
+    fieldGroup: null
+    handle: cardLink
+    instructions: 'Enter the link of the page or website you want to redirect to here'
+    name: 'Card link'
+    searchable: false
+    settings:
+      maxLength: '1000'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  c247021a-bb7b-4237-b3bc-b24e695267b7: # Card Thumbnail
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: cardThumbnail
+    instructions: 'select a thumbnail image'
+    name: 'Card Thumbnail'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:0433a068-a333-46ec-ba43-870dfbb5a5c6' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: thumbs
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0433a068-a333-46ec-ba43-870dfbb5a5c6' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d0d78113-f6d1-4750-af4e-cdd603d4a59a: # Button Link text 
+    columnSuffix: ybcxkhop
+    contentColumnType: string(160)
+    fieldGroup: null
+    handle: buttonLinkText
+    instructions: 'Write here the text you want to display in the link button'
+    name: 'Button Link text '
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 40
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: infoGrid
+name: 'Info Grid'
+sortOrder: 1

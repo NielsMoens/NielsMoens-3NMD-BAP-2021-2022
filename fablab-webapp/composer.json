@@ -2,6 +2,8 @@
   "require": {
     "craftcms/cms": "^3.7.26",
     "craftcms/redactor": "2.10.5",
+    "craftcms/store-hours": "2.2.0",
+    "ether/simplemap": "3.9.4",
     "kuriousagency/qrcode": "1.0.5",
     "mmikkel/reasons": "2.3.1",
     "nystudio107/craft-richvariables": "1.0.31",

@@ -1,6 +1,6 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # detail machine elements
+fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # machines
 handle: machineImage
 instructions: ''
 name: 'machine Image '
