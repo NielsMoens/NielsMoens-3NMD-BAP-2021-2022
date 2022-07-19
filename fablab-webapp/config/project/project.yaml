@@ -1,4 +1,4 @@
-dateModified: 1658183718
+dateModified: 1658190437
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -18,6 +18,7 @@ meta:
     8a11ff46-6934-4c8a-ba67-76eee055fbfc: Locations # Locations
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
     9e563a8a-d152-4f8c-8f9b-09e69187f925: safety # safety
+    9ff9100d-6e98-48f4-9380-ab73833cbfec: 'Locations Page' # Locations Page
     16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
     0033a93a-5f40-4e37-a832-6e2ff1d68222: 'Info Grid ' # Info Grid 
     38bbbab6-24e7-43a3-b563-04ac81b027c4: many-to-many # many-to-many
@@ -38,6 +39,8 @@ meta:
     778103a3-d3ce-4b8c-8ee3-6a120d9af162: 'Machines On Location' # Machines On Location
     950940db-3479-4e9b-807b-edb6561ed0f9: Locations # Locations
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
+    a0614031-9535-47ed-adc3-fd7a00af5e90: 'Locations Page' # Locations Page
+    a08bfe21-0581-468f-a45b-2271e49f7f31: 'location extra info' # location extra info
     a3d83619-8019-4c63-8902-c7a368e044be: 'Location Address' # Location Address
     a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7: 'Card link' # Card link
     af0bfecc-78dd-4e4f-9584-29bbfdd8a269: machines # machines

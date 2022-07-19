@@ -10,8 +10,8 @@ settings:
   charLimit: 255
   code: ''
   columnType: null
-  initialRows: '2'
-  multiline: '1'
+  initialRows: ''
+  multiline: ''
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

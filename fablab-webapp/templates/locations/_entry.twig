@@ -1,7 +1,7 @@
 {% extends "_layouts/site" %}
 
 {% block content  %}
-    {% set location = craft.entries.section('locations') %}
+    {% set location = craft.entries.section('locations').one() %}
 
     <div class="row">
         <div class="col-lg-12 d-flex flex-column mt-4">
@@ -9,21 +9,46 @@
                 <div class="col-lg-5">
                     <section class=" card card-rounded justify-content-around text-dark ">
                         <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                            <img class="card-img-top rounded-2" src="" alt="Card image cap">
+                            <img class="card-img-top rounded-2" src="" alt="">
                         </div>
                     </section>
                 </div>
 
-                <div class="col-lg-7 " >
+                <div class="col-lg-7">
                     <section class=" card card-rounded justify-content-around text-dark ">
                         <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
                             <div class="card-body">
                                 <h5 class="card-title">{{ entry.title }}</h5>
-                                <p>{{ entry.detailText }}</p>
+                                <p>{{ entry.locationExtraInfo }}</p>
                             </div>
                         </div>
                     </section>
                 </div>
+
+                <h3>Today’s Hours</h3>
+                {% set today = entry.openingHours.today %}
+                {% if today.isBlank %}
+                    <p>Sorry, we’re closed today.</p>
+                    {% set tomorrow = entry.openingHours.tomorrow %}
+                    {% if not tomorrow.isBlank %}
+                        <p>We’ll be back open tomorrow at {{ tomorrow.open|time }}.</p>
+                    {% endif %}
+                {% else %}
+                    <p>We’re open from {{ today.open|time }} to {{ today.close|time }} today.</p>
+                {% endif %}
+
+                <dl>
+                    {% for day in location.openingHours %}
+                        <dt>{{ day.name }}</dt>
+                        <dd>
+                            {% if day.isBlank %}
+                                Closed
+                            {% else %}
+                                {{ day.open|time }} - {{ day.close|time }}
+                            {% endif %}
+                        </dd>
+                    {% endfor %}
+                </dl>
             </div>
         </div>
     </div>

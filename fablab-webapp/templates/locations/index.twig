@@ -1,29 +1,40 @@
 {% extends "_layouts/site" %}
 
 {% block content %}
-        <div class="container">
+        {% set locationsOverview = craft.entries.section('locationsPage').one() %}
+
+        <div class="container mt-4 mt-md-0">
             <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center">
-                    <h2>Locations overview </h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
+                <div class=" text-center">
+                    <h2>{{ locationsOverview.locationsOverviewTitle }} </h2>
+                    <p class="lead">{{ locationsOverview.locationsOverviewDescription ? locationsOverview.locationsOverviewDescription : ''}}</p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12 d-flex flex-column">
-                    <div class="row">
-                       {% set locations = craft.entries.section('locations')  %}
-
+                <div class="col-lg-12 d-flex flex-column d-flex align-content-center">
+                    <div class="row d-flex align-content-center">
+                        {% set locations = craft.entries.section('locations')  %}
                         {% for location in locations %}
                             {% set thumbnail = location.locationImage.one() %}
-
 
                             <div class="col-lg-3">
                                 <section class=" card card-rounded justify-content-around text-dark ">
                                     <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                                        <img class="card-img-top rounded-3" src="{{ (thumbnail) ? (thumbnail.getUrl({width:160})) : 'https://via.placeholder.com/200' }}" alt="Card image cap">
+                                        <img class="card-img-top rounded-3" src="{{ (thumbnail) ? (thumbnail.getUrl()) : 'https://via.placeholder.com/200' }}" alt="Card image cap">
                                         <div class="card-body">
-                                            <h5 class="card-title">{{ location.title }}</h5>
+                                            <h3 class="card-title">{{ location.title }}</h3>
+                                            <h6 class="card-subtitle">Today’s Opening Hours</h6>
+                                            {% set today = location.openingHours.today %}
+                                            {% if today.isBlank %}
+                                                <p>Sorry, we’re closed today.</p>
+                                                {% set tomorrow = locations.openingHours.tomorrow %}
+                                                {% if not tomorrow.isBlank %}
+                                                    <p>We’ll be back open tomorrow at {{ tomorrow.open|time }}.</p>
+                                                {% endif %}
+                                            {% else %}
+                                                <p>We’re open from {{ today.open|time }} to {{ today.close|time }} today.</p>
+                                            {% endif %}
                                             <a href="{{ location.url }}" class="btn btn-primary">Learn more</a>
                                         </div>
                                     </div>
