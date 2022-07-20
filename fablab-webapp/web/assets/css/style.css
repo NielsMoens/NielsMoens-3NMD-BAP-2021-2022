@@ -1144,9 +1144,11 @@
     100% {
         -webkit-transform: scale(1) rotate(0);
         -moz-transform: scale(1) rotate(0);
-        -ms-transform: scale(1) rotate(0);
         -o-transform: scale(1) rotate(0);
         transform: scale(1) rotate(0);
+    }
+    100% {
+        -ms-transform: scale(1) rotate(0);
     }
 }
 
@@ -12971,10 +12973,6 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
     background-size: 100%;
 }
 
-.navbar-nav-scroll {
-    max-height: var(--bs-scroll-height, 75vh);
-    overflow-y: auto;
-}
 
 @media (min-width: 576px) {
     .navbar-expand-sm {
@@ -13575,13 +13573,6 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
 
 .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    float: left;
-    padding-right: 0.5rem;
-    color: #6c757d;
-    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 
 .breadcrumb-item.active {
@@ -20988,24 +20979,6 @@ code {
     }
 }
 
-.performance-overview-carousel .carousel-inner .item .icon::before {
-    position: absolute;
-    z-index: -1;Let's Explore Your Awesome City
-
-}
-
-.performance-overview-carousel .carousel-inner .item .icon.icon-a::before {
-    content: url("../../images/dashboard/shape-1.svg");
-}
-
-.performance-overview-carousel .carousel-inner .item .icon.icon-b::before {
-    content: url("../../images/dashboard/shape-1.svg");
-}
-
-.performance-overview-carousel .carousel-inner .item .icon.icon-c::before {
-    content: url("../../images/dashboard/shape-3.svg");
-}
-
 .performance-overview-carousel .carousel-control-prev,
 .performance-overview-carousel .carousel-control-next {
     top: 1.3rem;
@@ -21030,15 +21003,6 @@ code {
     background-image: none;
 }
 
-.performance-overview-carousel .carousel-control-prev:after {
-    font-family: "themify";
-    content: '\e64a';
-    font-size: .875rem;
-    color: #ffffff;
-    line-height: 1.875rem;
-    margin-right: 0.48rem;
-}
-
 .performance-overview-carousel .carousel-control-next {
     left: auto;
     right: 1.681rem;
@@ -21046,15 +21010,6 @@ code {
 
 .performance-overview-carousel .carousel-control-next .carousel-control-next-icon {
     background-image: none;
-}
-
-.performance-overview-carousel .carousel-control-next:after {
-    font-family: "themify";
-    content: '\e649';
-    font-size: .875rem;
-    color: #ffffff;
-    line-height: 1.875rem;
-    margin-right: 0.48rem;
 }
 
 .detailed-report-carousel .carousel-control-prev,
@@ -21081,14 +21036,6 @@ code {
     background-image: none;
 }
 
-.detailed-report-carousel .carousel-control-prev:after {
-    font-family: "themify";
-    content: '\e64a';
-    font-size: .875rem;
-    color: #6c7383;
-    line-height: 1.875rem;
-    margin-right: 0.48rem;
-}
 
 .detailed-report-carousel .carousel-control-next {
     left: auto;
@@ -21099,14 +21046,6 @@ code {
     background-image: none;
 }
 
-.detailed-report-carousel .carousel-control-next:after {
-    font-family: "themify";
-    content: '\e649';
-    font-size: .875rem;
-    color: #6c7383;
-    line-height: 1.875rem;
-    margin-right: 0.48rem;
-}
 
 .charts-data .progress {
     background: transparent;
@@ -23265,10 +23204,6 @@ code {
     border: none;
 }
 
-.card.table-darkBGImg {
-    background: #1E283D url("../../images/dashboard/darkBG.png") repeat-y right top;
-}
-
 .card.tale-bg {
     background: #DAE7FF;
 }
@@ -23484,11 +23419,6 @@ code {
     color: #ffffff;
 }
 
-.data-icon-card-primary .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
-}
-
 .data-icon-card-primary .background-icon i {
     z-index: 1;
     color: #ffffff;
@@ -23503,10 +23433,6 @@ code {
     color: #ffffff;
 }
 
-.data-icon-card-secondary .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
-}
 
 .data-icon-card-secondary .background-icon i {
     z-index: 1;
@@ -23520,11 +23446,6 @@ code {
 
 .data-icon-card-success .card-title {
     color: #ffffff;
-}
-
-.data-icon-card-success .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
 }
 
 .data-icon-card-success .background-icon i {
@@ -23541,11 +23462,6 @@ code {
     color: #ffffff;
 }
 
-.data-icon-card-info .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
-}
-
 .data-icon-card-info .background-icon i {
     z-index: 1;
     color: #ffffff;
@@ -23558,11 +23474,6 @@ code {
 
 .data-icon-card-warning .card-title {
     color: #ffffff;
-}
-
-.data-icon-card-warning .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
 }
 
 .data-icon-card-warning .background-icon i {
@@ -23579,10 +23490,6 @@ code {
     color: #ffffff;
 }
 
-.data-icon-card-danger .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
-}
 
 .data-icon-card-danger .background-icon i {
     z-index: 1;
@@ -23598,11 +23505,6 @@ code {
     color: #ffffff;
 }
 
-.data-icon-card-light .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
-}
-
 .data-icon-card-light .background-icon i {
     z-index: 1;
     color: #ffffff;
@@ -23615,11 +23517,6 @@ code {
 
 .data-icon-card-dark .card-title {
     color: #ffffff;
-}
-
-.data-icon-card-dark .background-icon::before {
-    content: url("../../images/dashboard/shape-4.svg");
-    position: absolute;
 }
 
 .data-icon-card-dark .background-icon i {
@@ -23675,24 +23572,6 @@ code {
 .rtl .form-check .form-check-label input[type="checkbox"] + .input-helper:before, .rtl .form-check .form-check-label input[type="checkbox"] + .input-helper:after {
     left: auto;
     right: 0;
-}
-
-.form-check .form-check-label input[type="checkbox"] + .input-helper:before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    border-radius: 2px;
-    border: none;
-    border-width: 2px;
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
-    transition: all;
-    transition-duration: 0s;
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
-    background: #EBEDF2;
 }
 
 .form-check .form-check-label input[type="checkbox"] + .input-helper:after {
@@ -29239,21 +29118,6 @@ div.tagsinput span.tag a {
 
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
-/* Auth */
-.auth .login-half-bg {
-    background: url("../../images/auth/login-bg.jpg");
-    background-size: cover;
-}
-
-.auth .register-half-bg {
-    background: url("../../images/auth/register-bg.jpg");
-    background-size: cover;
-}
-
-.auth.lock-full-bg {
-    background: url("../../images/auth/lockscreen-bg.jpg");
-    background-size: cover;
-}
 
 .auth .lock-profile-img {
     width: 90px;
