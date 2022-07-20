@@ -1,9 +1,9 @@
-columnSuffix: atjzzmpm
+columnSuffix: hznhvale
 contentColumnType: text
 fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
-handle: locationExtraInfo
-instructions: ''
-name: 'location extra info'
+handle: locationExtraContact
+instructions: 'If you have an other special form of contact for the user write it down here '
+name: 'Location Extra Contact'
 searchable: false
 settings:
   availableTransforms: '*'

@@ -1,5 +1,5 @@
 fieldLayouts:
-  4f51eb66-aa19-416d-b739-0b63b8a58ccb:
+  5114e6fa-b5a4-462f-9dc4-ebc2977e8690:
     tabs:
       -
         elements:
@@ -28,10 +28,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: default
+handle: login
 hasTitleField: true
-name: Default
-section: 90e49b5f-07b8-4145-826b-3852c9aebb1f # machines list
+name: Login
+section: d2df09db-06bd-4a28-bc88-68538250a29f # Login
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

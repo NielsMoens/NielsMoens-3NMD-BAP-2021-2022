@@ -1,12 +1,13 @@
-dateModified: 1658190437
+dateModified: 1658279402
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1eb8fa0c-6d0c-4183-8458-51cb6baa1fa3: Default # Default
+    1a9b64ed-f87b-4ec2-ae7b-9b7498caf125: 'Location Important Announcement ' # Location Important Announcement 
     5c64d819-0d02-4285-a033-940cd7b8e347: Home # Home
+    5c90a701-e0e4-4d9d-8f25-997db8296b92: Register # Register
     6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d: locations # locations
     6c0b2789-5e52-41de-84a2-8719c0ad32d7: 'Home Info' # Home Info
     6c70c20a-4aee-4f21-b4ff-52ebaf36a707: 'detail Text' # detail Text
@@ -19,40 +20,42 @@ meta:
     08c4ffa1-7de8-4d78-a5d8-17e0c937228d: categoryName # categoryName
     9e563a8a-d152-4f8c-8f9b-09e69187f925: safety # safety
     9ff9100d-6e98-48f4-9380-ab73833cbfec: 'Locations Page' # Locations Page
-    16f56060-3e94-4b96-b0a4-a7e885a66153: 'subject category' # subject category
     0033a93a-5f40-4e37-a832-6e2ff1d68222: 'Info Grid ' # Info Grid 
     38bbbab6-24e7-43a3-b563-04ac81b027c4: many-to-many # many-to-many
     52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a: fablab-webapp # fablab-webapp
     66f566b6-261d-4293-820c-28d42ea78c31: machines # machines
     80e4aa5d-eb4f-4829-969a-db66c4f40560: Homepage # Homepage
     84cca4ae-aa2e-4759-a1f1-c1946eed4767: 'locations Overview Description' # locations Overview Description
-    90e49b5f-07b8-4145-826b-3852c9aebb1f: 'machines list' # machines list
+    240ee863-c956-4719-a271-ebb13bef6c1b: 'Location Contact Email' # Location Contact Email
     271ed0fe-b6ba-432c-858e-7be5dba20f18: 'Welcome Title' # Welcome Title
     0433a068-a333-46ec-ba43-870dfbb5a5c6: Uploads # Uploads
     440ca2f6-c43c-4a7c-b436-1366abbc1b24: 'machine Image ' # machine Image 
     493bc15e-78ef-4169-a8e1-7c60b35441bc: 'opening hours' # opening hours
     512cad3f-3105-4a81-b185-3839be63ac50: 'Locations Overview Title ' # Locations Overview Title 
+    787d1e12-e83b-4d3b-94d3-338c4812d321: 'Location Extra Contact' # Location Extra Contact
     9639da72-9f64-4038-8ff5-2e80c35743aa: 'Info Grid' # Info Grid
-    17549f22-b84a-4efa-8f4d-e83d65584584: Default # Default
-    19621fb7-4303-43d5-82d3-f19d17cd5a89: locationsss # locationsss
+    14503d33-2594-47c7-9f55-82e3e31f5779: Register # Register
     63968b99-7ac3-452d-9f8e-868915d51c25: 'Section title' # Section title
     778103a3-d3ce-4b8c-8ee3-6a120d9af162: 'Machines On Location' # Machines On Location
     950940db-3479-4e9b-807b-edb6561ed0f9: Locations # Locations
     58426747-4527-4e01-83eb-8fffa431392c: 'Report Problem Image' # Report Problem Image
     a0614031-9535-47ed-adc3-fd7a00af5e90: 'Locations Page' # Locations Page
-    a08bfe21-0581-468f-a45b-2271e49f7f31: 'location extra info' # location extra info
+    a08bfe21-0581-468f-a45b-2271e49f7f31: 'Location Description' # Location Description
     a3d83619-8019-4c63-8902-c7a368e044be: 'Location Address' # Location Address
     a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7: 'Card link' # Card link
     af0bfecc-78dd-4e4f-9584-29bbfdd8a269: machines # machines
+    b0f1416e-fefb-45fe-a245-41ddc2404efe: Login # Login
     b9b9577a-0df2-4f57-bdd4-90cf609c5cff: sub # sub
     b71257cc-2010-4297-9163-f1f60dd5ac31: General # General
     be05fcff-4c8b-447e-a0f6-726827d24625: 'Locations description' # Locations description
     c247021a-bb7b-4237-b3bc-b24e695267b7: 'Card Thumbnail' # Card Thumbnail
     d0d78113-f6d1-4750-af4e-cdd603d4a59a: 'Button Link text ' # Button Link text 
+    d2df09db-06bd-4a28-bc88-68538250a29f: Login # Login
     d190d192-a79f-4e61-afbb-4ff8a197cee3: 'Locations Thumbnail' # Locations Thumbnail
     da445cf6-97b8-410a-9098-fb4ef5859baf: 'Report Problem Info' # Report Problem Info
     db37d21f-e9bc-46f3-89dc-1bb2bb236dc3: machines # machines
     dcaea295-d65f-4a92-a262-d60c36f61870: locations # locations
+    e88c79a3-b1c8-43e8-bb2c-10a990089786: 'Location Contact Phone number' # Location Contact Phone number
     f2aca6ca-2bf9-4696-a513-85e119aeaf3d: 'Report Problem Title ' # Report Problem Title 
     f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: fablab-webapp # fablab-webapp
     fb749a8b-744b-4404-ae8c-fb5b8ee233c4: Default # Default

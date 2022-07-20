@@ -1,61 +1,82 @@
 {% extends "_layouts/site" %}
 
 {% block content  %}
-    {% set location = craft.entries.section('locations').one() %}
+    {% set thumbnail = entry.locationImage.one() %}
+    <div class="container ">
+        <div class="card flex-row roww p-0 gx-4 gx-lg-5 align-items-center mb-4">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="..."></div>
+            <div class="col-lg-5 px-4 py-3">
+                <h3 class="font-weight-light">{{ entry.title }}</h3>
+                <p>{{ entry.locationDescription? entry.locationDescription : ''}}</p>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-lg-12 d-flex flex-column mt-4">
-            <div class="row">
-                <div class="col-lg-5">
-                    <section class=" card card-rounded justify-content-around text-dark ">
-                        <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                            <img class="card-img-top rounded-2" src="" alt="">
-                        </div>
-                    </section>
+
+        {% if( entry.locationImportantAnnouncement) %}
+            <div class="card text-white my-3  text-center bg-primary">
+                <div class="card-body ">
+                    <h4>
+                        {{ entry.locationImportantAnnouncement }}
+                    </h4>
                 </div>
+            </div>
+        {%  endif %}
 
-                <div class="col-lg-7">
-                    <section class=" card card-rounded justify-content-around text-dark ">
-                        <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ entry.title }}</h5>
-                                <p>{{ entry.locationExtraInfo }}</p>
-                            </div>
-                        </div>
-                    </section>
+        <div class="row gx-lg-5">
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Openings hours</h2>
+                            <ul class="list-unstyled">
+                                {% for day in entry.openingHours %}
+                                <li class=" d-flex justify-content-between">
+                                    <strong>{{ day.name }}</strong>
+                                    <span>
+                                        {% if day.isBlank %}
+                                            Closed
+                                        {% else %}
+                                            {{ day.open|time }} - {{ day.close|time }}
+                                        {% endif %}
+                                    </span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Location & Contact</h2>
 
-                <h3>Today’s Hours</h3>
-                {% set today = entry.openingHours.today %}
-                {% if today.isBlank %}
-                    <p>Sorry, we’re closed today.</p>
-                    {% set tomorrow = entry.openingHours.tomorrow %}
-                    {% if not tomorrow.isBlank %}
-                        <p>We’ll be back open tomorrow at {{ tomorrow.open|time }}.</p>
-                    {% endif %}
-                {% else %}
-                    <p>We’re open from {{ today.open|time }} to {{ today.close|time }} today.</p>
-                {% endif %}
+                        <ul class="list-unstyled ld-flex flex-column ">
+                            <li class="mb-4">
+                                <strong>Address</strong><br>
+                                <span>{{ entry.locationAddress }} <br> <a class="btn btn-primary p-2" href="http://maps.google.com/?q={{ entry.locationAddress }}">Take me there!</a></span>
+                            </li>
+                            <li>
+                                <strong>Contact info</strong><br>
+                                <span> {{ entry.locationContactEmail ? entry.locationContactEmail : '' }}<br>{{ entry.locationContactPhoneNumber ? entry.locationContactPhoneNumber : '' }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <dl>
-                    {% for day in location.openingHours %}
-                        <dt>{{ day.name }}</dt>
-                        <dd>
-                            {% if day.isBlank %}
-                                Closed
-                            {% else %}
-                                {{ day.open|time }} - {{ day.close|time }}
-                            {% endif %}
-                        </dd>
-                    {% endfor %}
-                </dl>
+
+
+
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <h2 class="ms-4 mt-4 card-title">Machines On Location</h2>
+                    <ul class=" list-group list-group-flush">
+                        {% set machine = entry.machinesOnLocation %}
+                        {%for machine in entry.machinesOnLocation %}
+                            <li class="ms-2 list-group-item "> <a class="text-dark" href="{{ machine.url }}">{{ machine.title}}</a> </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
-    {% set machine = entry.machinesOnLocation %}
-
-    {%for machine in entry.machinesOnLocation %}
-        <a href="{{ machine.url }}">{{ machine.title  }}</a>
-    {% endfor %}
 {% endblock %}

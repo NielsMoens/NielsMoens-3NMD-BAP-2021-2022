@@ -1,0 +1,27 @@
+columnSuffix: atjzzmpm
+contentColumnType: text
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: locationDescription
+instructions: ''
+name: 'Location Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

@@ -13,7 +13,7 @@ settings:
   showSiteMenu: false
   source: null
   sources:
-    - 'section:19621fb7-4303-43d5-82d3-f19d17cd5a89' # locationsss
+    - 'section:19621fb7-4303-43d5-82d3-f19d17cd5a89'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
