@@ -1,5 +1,6 @@
 {
   "require": {
+    "clarknelson/craft-recaptcha-3": "1.2.2",
     "craftcms/cms": "^3.7.26",
     "craftcms/redactor": "2.10.5",
     "craftcms/store-hours": "2.2.0",
@@ -7,7 +8,7 @@
     "kuriousagency/qrcode": "1.0.5",
     "mmikkel/reasons": "2.3.1",
     "nystudio107/craft-richvariables": "1.0.31",
-    "page-8/craft-manytomany": "1.0.2.2",
+    "solspace/craft-freeform": "3.12.11",
     "studioespresso/craft-dumper": "2.0.0",
     "verbb/field-manager": "2.2.5",
     "verbb/super-table": "2.7.2",
