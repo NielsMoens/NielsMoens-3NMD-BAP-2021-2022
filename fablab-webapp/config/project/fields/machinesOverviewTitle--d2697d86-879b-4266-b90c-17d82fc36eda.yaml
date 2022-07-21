@@ -1,13 +1,13 @@
-columnSuffix: iaukbyrn
-contentColumnType: text
+columnSuffix: vdoltgox
+contentColumnType: string(1020)
 fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # machines
-handle: detailText
+handle: machinesOverviewTitle
 instructions: ''
-name: 'detail Text'
+name: 'Machines Overview Title'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 255
   code: ''
   columnType: null
   initialRows: '4'

@@ -11,7 +11,6 @@
             </div>
         </div>
 
-
         {% if( entry.locationImportantAnnouncement) %}
             <div class="card text-white my-3  text-center bg-primary">
                 <div class="card-body ">
@@ -70,8 +69,8 @@
                 <div class="card h-100">
                     <h2 class="ms-4 mt-4 card-title">Machines On Location</h2>
                     <ul class=" list-group list-group-flush">
-                        {% set machine = entry.machinesOnLocation %}
-                        {%for machine in entry.machinesOnLocation %}
+                        {% set machines = entry.machinesOnLocation %}
+                        {%for machine in machines %}
                             <li class="ms-2 list-group-item "> <a class="text-dark" href="{{ machine.url }}">{{ machine.title}}</a> </li>
                         {% endfor %}
                     </ul>

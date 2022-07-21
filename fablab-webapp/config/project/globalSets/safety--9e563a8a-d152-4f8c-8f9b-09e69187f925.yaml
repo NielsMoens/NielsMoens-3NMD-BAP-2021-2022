@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # detail Text
+            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # Description
             instructions: null
             label: null
             required: false

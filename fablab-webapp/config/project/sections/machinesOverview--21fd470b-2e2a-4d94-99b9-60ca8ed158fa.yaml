@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: machinesOverview
+name: 'Machines Overview'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
+    enabledByDefault: true
+    hasUrls: true
+    template: machines/index.twig
+    uriFormat: machines-overview
+type: single

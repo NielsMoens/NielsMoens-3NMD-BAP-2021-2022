@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: locationsPage
-name: 'Locations Page'
+handle: safetyOverview
+name: 'Safety Overview'
 previewTargets:
   -
     __assoc__:
@@ -18,7 +18,7 @@ propagationMethod: all
 siteSettings:
   f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: safety/index.twig
+    uriFormat: safety
 type: single

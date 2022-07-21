@@ -1,0 +1,78 @@
+field: 71ee94e7-a545-4cae-8239-98119028b390 # Instructions
+fieldLayouts:
+  2a566d15-8eea-4985-b9a2-a1388a20287b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1118ac18-cbfe-4485-88d6-2c959b1ce05c # Instruction Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ca728082-3604-498c-9fad-83653bb83d5f # Descprition
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1118ac18-cbfe-4485-88d6-2c959b1ce05c: # Instruction Title
+    columnSuffix: ldpjilzo
+    contentColumnType: text
+    fieldGroup: null
+    handle: instructionTitle
+    instructions: ''
+    name: 'Instruction Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ca728082-3604-498c-9fad-83653bb83d5f: # Descprition
+    columnSuffix: izgulfuy
+    contentColumnType: text
+    fieldGroup: null
+    handle: instructionDescription
+    instructions: ''
+    name: Descprition
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: Instructions
+name: Instructions
+sortOrder: 1

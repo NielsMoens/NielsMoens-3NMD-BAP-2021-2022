@@ -46,10 +46,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: locationsPage
+handle: locationsOverview
 hasTitleField: false
-name: 'Locations Page'
-section: 9ff9100d-6e98-48f4-9380-ab73833cbfec # Locations Page
+name: 'locations Overview'
+section: 9ff9100d-6e98-48f4-9380-ab73833cbfec # locations Overview
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

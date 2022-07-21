@@ -1,86 +1,67 @@
 {% extends "_layouts/site" %}
 
 {% block content  %}
-
     {% set machines = craft.entries.section('machines') %}
+    {% set thumbnail = entry.machineImage.one() %}
+    <div class="container">
+        <div class="card flex-row roww p-0 gx-4 gx-lg-5 align-items-center mb-4">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="machineImage"></div>
+            <div class="col-lg-5 px-4 py-3">
+                <h3 class="font-weight-light">{{ entry.title }}</h3>
+                <p>{{ entry.description }}</p>
+            </div>
+        </div>
 
+        {% if(entry.safetyType) %}
+            {% set safetyType = entry.safetyType %}
+            {%for safety in safetyType %}
+                <div class="card my-3 text-white text-center bg-warning">
+                    <div class="card-body ">
+                        <h4>
+                            Before using this machine, read the safety rule for <span class="text-primary font-weight-medium">{{ safety.title}}</span> machines
+                        </h4>
+                        <a href="{{ safety.url }}" class="btn btn-outline-info p-2 ">READ HERE!</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
 
-    <div class="row">
-        <div class="col-lg-12 d-flex flex-column mt-4">
-            <div class="row">
-                <div class="col-lg-5">
-                    <section class=" card card-rounded justify-content-around text-dark ">
-                        <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                            <img class="card-img-top rounded-2" src="" alt="Card image cap">
-                        </div>
-                    </section>
+        <div class="card card-rounded bg-primary mt-4 mb-2">
+            <div class="card-body">
+                <div class="col-sm-12 text-center">
+                    <h2 class="text-white upgrade-info mb-0">{{ entry.instructionsTitle}}</h2>
                 </div>
-                <div class="col-lg-7 " >
-                    <section class=" card card-rounded justify-content-around text-dark ">
-                        <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ entry.title }}</h5>
-                                <p>{{ entry.detailText }}</p>
-                            </div>
+            </div>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                {% for instruction in entry.instructions%}
+                    {% set alpha = 'abcdefghijklmnopqrstuvwxyz' %}
+                    {% set randomCharacter = random(alpha) ~ random(alpha) ~ random(alpha) %}
+
+                    <div class="card-header d-flex justify-content-between align-items-center" >
+                        <h4 class="mb-0 btn text-primary text-decoration-underline font-weight-bold"
+                            data-toggle="collapse"
+                            data-target="#{{ instruction.instructionTitle | split(' ')[0] }}{{ randomCharacter }}"
+                            aria-expanded="true"
+                            aria-controls="collapseOne">
+                            {{ instruction.instructionTitle }}
+                        </h4>
+                        <i class="mdi mdi-arrow-down-drop-circle-outline mb-0 btn text-primary dropdown-font"
+                           data-toggle="collapse"
+                           data-target="#{{ instruction.instructionTitle | split(' ')[0] }}{{ randomCharacter }}"
+                           aria-expanded="true"
+                           aria-controls="collapseOne"></i>
+                    </div>
+                    <div id="{{ instruction.instructionTitle | split(' ')[0]}}{{ randomCharacter }}" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            {{ instruction.instructionDescription }}
                         </div>
-                    </section>
-                </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-
-{#    {% for category in entry.categorytitle %}#}
-
-{#    <div id="accordion" class="mt-2">#}
-{#        <div class="card">#}
-{#            <div class="card-header" id="headingOne">#}
-{#                <h5 class="mb-0 d-inline">#}
-{#                    <button class="btn btn-link" data-toggle="collapse" data-target="#{{ category.categoryName }}" aria-expanded="true" aria-controls="{{ category.categoryName }}">#}
-{#                        {{ category.categoryName }}>#}
-{#                    </button>#}
-{#                </h5>#}
-{#            </div>#}
-{#            <div id="{{ category.categoryName }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">#}
-{#                <div class="card-body" id="child1">#}
-{#                    <div class="card">#}
-{#                        <div class="card-header">#}
-{#                            <a href="#" data-toggle="collapse" data-target="#collapseOneA">Child A</a>#}
-{#                        </div>#}
-{#                        <div class="card-body collapse" data-parent="#child1" id="collapseOneA">#}
-{#                            Crunch wolf moon tempor, sunt aliqua put a bird.#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="card">#}
-{#                        <div class="card-header">#}
-{#                            <a href="#" data-toggle="collapse" data-target="#collapseOneB">Child B</a>#}
-{#                        </div>#}
-{#                        <div class="card-body collapse" data-parent="#child1" id="collapseOneB">#}
-{#                            Another flipp runch wolf moon tempor, sunt aliqua put a bird.#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#    {% endfor %}#}
-
-
-    <section class="site-hero overlay" >
-        <div class="container">
-            <div class="row align-items-center site-hero-inner justify-content-center">
-                <div class="col-md-12">
-                    <div class="mb-5 element-animate">
-                        <div class="row align-items-center">
-                            <div class="col-md-8">
-                                {% for machine in machines %}
-                                    <h1 class="mb-0">{{ machine.title }}</h1>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 {% endblock %}

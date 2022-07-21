@@ -1,13 +1,17 @@
 {% extends "_layouts/site" %}
 
 {% block content %}
-        {% set locationsOverview = craft.entries.section('locations') %}
+        {% set locationsOverview = craft.entries.section('locationsOverview').one() %}
 
         <div class="container mt-4 mt-md-0">
-            <div class="row justify-content-center mb-5">
-                <div class=" text-center">
-                    <h2>{{ locationsOverview.locationsOverviewTitle }} </h2>
-                    <p class="lead">{{ locationsOverview.locationsOverviewDescription ? locationsOverview.locationsOverviewDescription : ''}}</p>
+            <div class="card card-rounded bg-primary">
+                <div class="card-body">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="text-white upgrade-info mb-0">{{ locationsOverview.locationsOverviewTitle }}</h2>
+                        {% if(locationsOverview.locationsOverviewDescription)  %}
+                            <p class="text-white">{{ locationsOverview.locationsOverviewDescription }}</p>
+                        {%  endif %}
+                    </div>
                 </div>
             </div>
 
