@@ -1,4 +1,4 @@
-dateModified: 1658431200
+dateModified: 1658433720
 email:
   fromEmail: nielsmoens.dev@gmail.com
   fromName: fablab-webapp
@@ -90,6 +90,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
+    licenseKey: 3Y2K6T6AMK1N9BH1M94Y84FK
     schemaVersion: 3.5.1
     settings:
       ajaxByDefault: true
