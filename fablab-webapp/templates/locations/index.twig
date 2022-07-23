@@ -2,9 +2,7 @@
 
 {% block content %}
         {% set locationsOverview = craft.entries.section('locationsOverview').one() %}
-
-        <div class="container mt-4 mt-md-0">
-            <div class="card card-rounded bg-primary">
+            <div class="card card-rounded bg-primary mt-4 mt-md-0">
                 <div class="card-body">
                     <div class="col-sm-12 text-center">
                         <h2 class="text-white upgrade-info mb-0">{{ locationsOverview.locationsOverviewTitle }}</h2>
@@ -48,6 +46,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-
 {% endblock %}
