@@ -24,34 +24,35 @@
         </nav>
         <div class="container-fluid page-body-wrapper">
             <nav class="d-flex flex-column  sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <li class="nav-item nav-category">Machines</li>
+                <ul class="nav mt-5">
+                    <li class="nav-item nav-category">{{ "Navigation" |t}}</li>
+                    {% for navCat in navigation.mainNavigation %}
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="menu-icon mdi mdi-printer-3d"></i>
-                            <span class="menu-title">3Dprinters</span>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#{{ navCat.navigationCategory }}" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="menu-icon mdi mdi-{{navCat.iconlabel ? navCat.iconlabel : 'mdi-square-small' }}"></i>
+                            <span class="menu-title"> {{navCat.navigationCategory}} </span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div class="collapse" id="ui-basic">
+                        <div class="collapse" id="{{ navCat.navigationCategory }}">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="{{ siteUrl }}machines/Ender5">Ender-5</a></li>
+                            {% for navCatItem in navCat.navigationCategoryItem %}
+                                <li class="nav-item"> <a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
+                            {% endfor %}
                             </ul>
                         </div>
                     </li>
+                    {% endfor %}
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basi" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="menu-icon mdi mdi-flash"></i>
-                            <span class="menu-title">Lazercutters</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-basi">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="{{ siteUrl }}machines/Ender5"></a></li>
-                            </ul>
-                        </div>
-                    </li>
-
+                    {% if navigation.navigation %}
+                        {%  for navigationItem in navigation.navigation %}
+                            <li class="nav-item">
+                                <a class="nav-link"  href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                                    <i class="menu-icon mdi mdi-{{ navigationItem.iconlabel ? navigationItem.iconlabel : 'mdi-square-small' }}"></i>
+                                    <span class="menu-title"> {{ navigationItem.navigationLabel }} </span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
                 </ul>
 
                 {# Change site language #}
@@ -82,7 +83,7 @@
                             language: site.language,
                         }]) %}
                     {% endfor %}
-                    <li class="nav-item nav-category">Change Language</li>
+                    <li class="nav-item nav-category">{{ "Change Language" |t}}</li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#lang" aria-expanded="false" aria-controls="ui-basic">
                             {% for switcherLink in switcherLinks %}

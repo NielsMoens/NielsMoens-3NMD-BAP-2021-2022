@@ -10,4 +10,6 @@ return array(
     "Address" => "Adres",
     "Contact info" => "Contact gegevens",
     "Take me there" => "Bereken route",
+    "Change Language" => "Taal aanpassen",
+    "Navigation" => "Navigatie"
 );
