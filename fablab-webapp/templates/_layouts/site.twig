@@ -5,7 +5,7 @@
     <div class="container-scroller">
         <nav class="navbar default-layout col-lg-12 fixed-top d-flex d-row align-items-top flex-row">
             <div class="text-center navbar-brand-wrapper col-2 d-flex align-items-center justify-content-start">
-                <div>
+                <div class="d-flex flex-row">
                     <a class="navbar-brand brand-logo" href="{{ siteUrl }}">
                         <img src="{{ primarySiteUrl }}assets/images/logo-white.png" alt="logo" />
                     </a>
@@ -23,7 +23,7 @@
             </div>
         </nav>
         <div class="container-fluid page-body-wrapper">
-            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <nav class="d-flex flex-column  sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-category">Machines</li>
                     <li class="nav-item">
@@ -52,15 +52,60 @@
                         </div>
                     </li>
 
-                    <li class="nav-item nav-category">Elektronica</li>
+                </ul>
+
+                {# Change site language #}
+                <ul class="nav">
+                    {# Change the site language and populate the language list shown dynamicly #}
+                    {# This section contains parts of source: http://craftsnippets.com/articles/universal-language-switcher-for-craft-cms #}
+
+                    {# logic #}
+                    {% set currentElement = craft.app.urlManager.matchedElement %}
+                    {% set sites = craft.app.getSites().getGroupById(currentSite.groupId).getSites() %}
+                    {% set switcherLinks = [] %}
+
+                    {% for site in sites if site.baseUrl is not empty %}
+                        {% set title = craft.app.i18n.getLocaleById(site.language).nativeName %}
+                        {% set url = site.getBaseUrl() %}
+                        {% if currentElement %}
+                            {% set otherLocaleElement = craft.app.getElements().getElementById(currentElement.id, currentElement.className(), site.id) %}
+                            {% if otherLocaleElement and otherLocaleElement.enabledForSite %}
+                                {% set url = otherLocaleElement.url %}
+                            {% endif %}
+                        {% endif %}
+
+                        {% set switcherLinks = switcherLinks|merge([{
+                            url: url,
+                            title: title,
+                            countryCode: site.language|split('-')|last,
+                            current: site.id == currentSite.id ? true : false,
+                            language: site.language,
+                        }]) %}
+                    {% endfor %}
+                    <li class="nav-item nav-category">Change Language</li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                            <i class="menu-icon mdi mdi-raspberry-pi"></i>
-                            <span class="menu-title">Raspberries</span>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#lang" aria-expanded="false" aria-controls="ui-basic">
+                            {% for switcherLink in switcherLinks %}
+                                {% if(switcherLink.current == 1) %}
+                                    <i class="menu-icon mdi mdi-earth">  <span class="menu-title">{{ switcherLink.language }} </span></i>
+                                {% endif %}
+                            {% endfor %}
                             <i class="menu-arrow"></i>
                         </a>
                     </li>
-                    <li class="nav-item nav-category">Tools</li>
+                    <div class="collapse" id="lang">
+                        {% if switcherLinks|length > 1 %}
+                            <ul class="nav flex-column sub-menu">
+                                {% for switcherLink in switcherLinks %}
+                                    <li class="  nav-item">
+                                        <a class="nav-link" href="{{switcherLink.url}}" hreflang="{{switcherLink.language}}" lang="{{switcherLink.language}}">
+                                            <span class="{{switcherLink.current ? 'text-decoration-underline font-weight-700' }}  menu-title">{{ switcherLink.title }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
                 </ul>
             </nav>
             <!-- partial -->
