@@ -4,12 +4,6 @@
     {% set machines = craft.entries.section('machines') %}
     {% set thumbnail = entry.machineImage.one() %}
     <div class="container">
-        {% if craft.app.request.param('status') == 'true' %}
-            <div class="alert alert-success  fade show my-4 d-flex justify-content-between align-items-center" role="alert">
-                <p><strong>Holy guacamole!</strong> Thanks for reporting a problem with {{ entry.title }}, we'll we contact you if we have any follow-up questions. <br> <strong>Have a nice day!</strong></p>
-                <i type="button" data-dismiss="alert" aria-label="Close" class="text-success  mdi mdi-close "></i>
-            </div>
-        {% endif %}
         <div class="card flex-row roww p-0 gx-4 gx-lg-5 align-items-center mb-4">
             <div class="col-lg-7"><img class="img-fluid rounded mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="machineImage"></div>
             <div class="col-lg-5 px-4 py-3">
@@ -24,7 +18,7 @@
                 <div class="card my-3 text-white text-center bg-warning">
                     <div class="card-body ">
                         <h4>
-                            Before using this machine, read the safety rule for <span class="text-primary font-weight-medium">{{ safety.title}}</span> machines
+                            {{ entry.safetyBannerContent}}
                         </h4>
                         <a href="{{ safety.url }}" class="btn btn-outline-info p-2 ">READ HERE!</a>
                     </div>
@@ -73,7 +67,7 @@
         <div class="card card-rounded bg-primary mt-4 mb-2">
             <div class="card-body">
                 <div class="col-sm-12 text-center">
-                    <h2 class="text-white upgrade-info mb-0">Report a problem</h2>
+                    <h2 class="text-white upgrade-info mb-0">{{ entry.reportAProblemTitle }}</h2>
                 </div>
             </div>
         </div>

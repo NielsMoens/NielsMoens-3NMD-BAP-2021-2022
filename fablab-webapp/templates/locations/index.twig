@@ -28,18 +28,18 @@
                                         <img class="card-img-top rounded-3" src="{{ (thumbnail) ? (thumbnail.getUrl()) : 'https://via.placeholder.com/200' }}" alt="Card image cap">
                                         <div class="card-body">
                                             <h3 class="card-title">{{ location.title }}</h3>
-                                            <h6 class="card-subtitle">Today’s Opening Hours</h6>
+                                            <span class="text-decoration-underline">{{ "Today's Opening Hours" |t  }} :</span>
                                             {% set today = location.openingHours.today %}
                                             {% if today.isBlank %}
-                                                <p>Sorry, we’re closed today.</p>
+                                                <p>{{ "Sorry, we’re closed today." |t}}</p>
                                                 {% set tomorrow = locations.openingHours.tomorrow %}
                                                 {% if not tomorrow.isBlank %}
-                                                    <p>We’ll be back open tomorrow at {{ tomorrow.open|time }}.</p>
+                                                    <p>{{ "We'll be back open tomorrow at" |t}} {{ tomorrow.open|time }}.</p>
                                                 {% endif %}
                                             {% else %}
-                                                <p>We’re open from {{ today.open|time }} to {{ today.close|time }} today.</p>
+                                                <p>{{ "We're open today from" |t }} <br> {{ today.open|time }} - {{ today.close|time }}</p>
                                             {% endif %}
-                                            <a href="{{ location.url }}" class="btn btn-primary">Learn more</a>
+                                            <a href="{{ location.url }}" class="btn btn-primary">{{ "Learn more" |t }}</a>
                                         </div>
                                     </div>
                                 </section>

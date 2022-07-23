@@ -28,7 +28,7 @@
                                         {% for category in machine.machineType %}
                                         <span class=" mb-3 badge badge-primary">{{ category.title }}</span><br>
                                         {% endfor %}
-                                        <a href="{{ machine.url }}" class="btn btn-primary">Learn more</a>
+                                        <a href="{{ machine.url }}" class="btn btn-primary">{{ "Learn more" |t }}</a>
                                     </div>
                                 </div>
                             </section>
