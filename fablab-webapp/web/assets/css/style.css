@@ -1,3 +1,5 @@
+/* source: https://startbootstrap.com/theme/sb-admin-2*/
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 @-moz-keyframes flash {
@@ -21883,6 +21885,14 @@ code {
     margin-left: .5rem;
 }
 
+.btn-icon-split {
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
 .btn.btn-social-icon, .ajax-upload-dragdrop .btn-social-icon.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-social-icon.swal2-styled {
     width: 50px;
     height: 50px;
@@ -22073,8 +22083,8 @@ code {
 }
 
 .btn-outline-warning {
-    border: 1px solid #664600;
-    color: #664600;
+    border: 1px solid #ab7400;
+    color: #ab7400;
 }
 
 .btn-outline-warning:hover {

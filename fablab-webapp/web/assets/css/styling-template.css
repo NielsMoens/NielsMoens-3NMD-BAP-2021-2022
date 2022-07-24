@@ -50,3 +50,11 @@ textarea  {
 #form-input-uploadAPicture{
     margin: 10px 0px 20px 0px;
 }
+
+.btn-icon-split {
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+}

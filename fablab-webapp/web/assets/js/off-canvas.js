@@ -1,3 +1,4 @@
+//menu slide animation
 (function($) {
   'use strict';
   $(function() {
