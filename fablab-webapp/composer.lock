@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b08f80740290468aa18cc443ddd39f0",
+    "content-hash": "3f1662a482c440f91a7adcdf5fd3eb20",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5180,6 +5180,71 @@
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
             "time": "2021-11-03T03:07:00+00:00"
+        },
+        {
+            "name": "verbb/cp-nav",
+            "version": "3.0.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/cp-nav.git",
+                "reference": "e5308861fe875264e612c8a35309a30ae5827b21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/cp-nav/zipball/e5308861fe875264e612c8a35309a30ae5827b21",
+                "reference": "e5308861fe875264e612c8a35309a30ae5827b21",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.4.0",
+                "verbb/base": "^1.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Control Panel Nav",
+                "handle": "cp-nav",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/cp-nav/craft-3/CHANGELOG.md",
+                "class": "verbb\\cpnav\\CpNav"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\cpnav\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "http://verbb.io"
+                }
+            ],
+            "description": "Control Panel Nav helps you managing your Control Panel navigation.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "control panel nav",
+                "control panel navigation",
+                "cp nav",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/verbb/cp-nav",
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/cp-nav/issues?state=open",
+                "rss": "https://github.com/verbb/cp-nav/commits/v2.atom",
+                "source": "https://github.com/verbb/cp-nav"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/verbb",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-30T12:39:32+00:00"
         },
         {
             "name": "verbb/field-manager",

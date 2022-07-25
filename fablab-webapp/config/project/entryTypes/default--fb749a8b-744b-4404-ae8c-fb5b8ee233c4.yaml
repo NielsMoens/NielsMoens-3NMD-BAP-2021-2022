@@ -54,6 +54,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 0845fdb0-dae4-4de9-ace1-aa4bec536fa2 # Safety Banner Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 8adfccea-c28b-443e-b085-a479432c7469 # SafetyType
             instructions: null
             label: null
@@ -62,6 +71,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: 'Machine Detail Page Content'
+        sortOrder: 1
+      -
+        elements:
           -
             fieldUid: a9aa0fe6-f7d7-4ae8-81c3-ce7074ed7c58 # Instructions Section Title
             instructions: null
@@ -80,8 +93,21 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Machine Detail Page Content'
-        sortOrder: 1
+        name: Instructions
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: f5ae64bc-6530-4565-966c-d29594de6f43 # Report A Problem Title 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Report A Problem'
+        sortOrder: 3
 handle: default
 hasTitleField: true
 name: Default

@@ -43,7 +43,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   ca728082-3604-498c-9fad-83653bb83d5f: # Descprition
     columnSuffix: izgulfuy
@@ -71,7 +71,7 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\redactor\Field
 handle: Instructions
 name: Instructions

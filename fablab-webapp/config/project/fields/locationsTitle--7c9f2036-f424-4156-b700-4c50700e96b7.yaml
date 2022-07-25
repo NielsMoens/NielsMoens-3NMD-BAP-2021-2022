@@ -15,5 +15,5 @@ settings:
   placeholder: 'Write a title for the locations'
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

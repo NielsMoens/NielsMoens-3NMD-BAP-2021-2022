@@ -1,0 +1,19 @@
+columnSuffix: mjvniwqf
+contentColumnType: text
+fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
+handle: footerText
+instructions: ''
+name: 'footer text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

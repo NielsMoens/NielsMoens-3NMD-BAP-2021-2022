@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5a0fc7d3-92eb-468e-94c0-cc7f51754247 # Navigation
+handle: mainNavigation
+instructions: ''
+name: 'Main Navigation'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_mainnavigation}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

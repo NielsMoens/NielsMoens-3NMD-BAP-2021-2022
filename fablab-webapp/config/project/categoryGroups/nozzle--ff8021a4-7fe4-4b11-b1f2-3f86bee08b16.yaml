@@ -32,7 +32,11 @@ fieldLayouts:
 handle: nozzle
 name: 'Nozzle '
 siteSettings:
-  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # fablab-webapp
+  00738fd8-71aa-43a1-a75e-4a54311e2180: # bap-nielsmoens_NL
+    hasUrls: true
+    template: null
+    uriFormat: 'nozzle/{slug}'
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # bap-nielsmoens_EN
     hasUrls: true
     template: null
     uriFormat: 'nozzle/{slug}'

@@ -1,0 +1,101 @@
+field: 2e7bf592-27b5-4b06-a3d5-e232876f3252 # Main Navigation
+fieldLayouts:
+  00f95824-cb81-4443-8825-56231b8c40aa:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8a8363b0-64f6-49ae-a25a-0d7066de4306 # IconLabel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df4a5294-7ee3-46e6-bf5a-15fc841cff17 # Navigation Category
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 473f1563-91b2-48a8-ad8a-c2c2e704553f # Navigation Category Item
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8a8363b0-64f6-49ae-a25a-0d7066de4306: # IconLabel
+    columnSuffix: fgcchsou
+    contentColumnType: text
+    fieldGroup: null
+    handle: iconlabel
+    instructions: 'check https://materialdesignicons.com/ for the correct label name'
+    name: IconLabel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  473f1563-91b2-48a8-ad8a-c2c2e704553f: # Navigation Category Item
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: navigationCategoryItem
+    instructions: 'Select the navigation category items'
+    name: 'Navigation Category Item'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  df4a5294-7ee3-46e6-bf5a-15fc841cff17: # Navigation Category
+    columnSuffix: jbmgnwnx
+    contentColumnType: text
+    fieldGroup: null
+    handle: navigationCategory
+    instructions: 'Type here the navigation Category Title '
+    name: 'Navigation Category'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: mainNavigation
+name: MainNavigation
+sortOrder: 1

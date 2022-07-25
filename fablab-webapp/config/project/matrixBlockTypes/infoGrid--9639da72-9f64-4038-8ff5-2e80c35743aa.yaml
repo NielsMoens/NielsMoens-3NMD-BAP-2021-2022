@@ -61,7 +61,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
   a4e4a601-301b-4fdb-ae5b-c6adc4bc98e7: # Card link
     columnSuffix: kluxqqsl
@@ -77,7 +77,7 @@ fields:
       types:
         - url
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\Url
   c247021a-bb7b-4237-b3bc-b24e695267b7: # Card Thumbnail
     columnSuffix: null
@@ -131,7 +131,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: craft\fields\PlainText
 handle: infoGrid
 name: 'Info Grid'

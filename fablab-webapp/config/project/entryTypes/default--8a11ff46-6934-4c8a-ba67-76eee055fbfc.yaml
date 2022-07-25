@@ -45,6 +45,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 4d52fefb-b6e3-4adf-8bac-489be8cf5003 # Openinghours Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 493bc15e-78ef-4169-a8e1-7c60b35441bc # opening hours
             instructions: ''
             label: ''
@@ -72,6 +81,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 26311269-ed71-49df-898d-e9dc3f47d8bc # Location Section Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 240ee863-c956-4719-a271-ebb13bef6c1b # Location Contact Email
             instructions: null
             label: null
@@ -91,6 +109,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 787d1e12-e83b-4d3b-94d3-338c4812d321 # Location Extra Contact
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 69748453-5990-4173-bb2d-589424d6765d # Machines On Locations Title 
             instructions: null
             label: null
             required: false
