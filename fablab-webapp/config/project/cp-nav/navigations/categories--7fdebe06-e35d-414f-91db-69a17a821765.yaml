@@ -1,11 +1,11 @@
 currLabel: Categories
-customIcon: null
-enabled: true
+customIcon: ''
+enabled: 1
 handle: categories
 icon: categories
 layout: 644bc34f-dfa9-4202-8f72-b7098b959238 # Default
-newWindow: false
-order: 3
+newWindow: 0
+order: 4
 prevLabel: Categories
 prevUrl: categories
 type: ''

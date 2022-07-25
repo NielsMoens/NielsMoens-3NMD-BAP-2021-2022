@@ -1,11 +1,11 @@
 currLabel: 'generate QR code'
-customIcon: null
-enabled: true
+customIcon: ''
+enabled: 1
 handle: generateQrCode
 icon: settings
 layout: 644bc34f-dfa9-4202-8f72-b7098b959238 # Default
-newWindow: false
-order: 99
+newWindow: 0
+order: 12
 prevLabel: 'generate QR code'
 prevUrl: /qr-code
 type: manual
