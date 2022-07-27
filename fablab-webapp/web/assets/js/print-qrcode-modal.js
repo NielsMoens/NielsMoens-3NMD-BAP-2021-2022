@@ -1,4 +1,4 @@
-// origin source: https://codepen.io/clagosv/pen/YjQdao
+// This script contains parts of source: https://codepen.io/clagosv/pen/YjQdao
 
 document.getElementById("btnPrint").onclick = function () {
     printElement(document.getElementById("printThis"));

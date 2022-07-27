@@ -15,29 +15,32 @@
                 <a href="/reportproblem" class=" p-3 btn btn-outline-warning mt-3">
                     Something wrong with the machine ? Report a problem here!
                 </a>
-                <a data-toggle="modal" data-target="#form" class="p-3 btn btn-outline-primary mt-3">
-                    Create QR code
-                </a>
-                <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header border-bottom-0">
-                                <h5 class="modal-title" id="exampleModalLabel">QR code</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id="printThis" class="form-group text-center">
-                                    <img src="https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl={{craft.request.url }}" class="img-fluid" alt="QR code">
+
+                {% if currentUser %}
+                    <a data-toggle="modal" data-target="#form" class="p-3 btn btn-outline-primary mt-3">
+                        Create QR code
+                    </a>
+                    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <h5 class="modal-title" id="exampleModalLabel">QR code</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a id="btnPrint" type="button" class="p-3 btn btn-outline-primary mt-3">Print</a>
+                                <div class="modal-body">
+                                    <div id="printThis" class="form-group text-center">
+                                        <img src="https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl={{craft.request.url}}" class="img-fluid" alt="QR code">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a id="btnPrint" type="button" class="p-3 btn btn-outline-primary mt-3">Print</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                {% endif %}
             </div>
         </div>
 
