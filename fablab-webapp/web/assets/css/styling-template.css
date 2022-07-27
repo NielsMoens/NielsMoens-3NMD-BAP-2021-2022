@@ -61,7 +61,7 @@ textarea  {
 
 /*show the correct things in the print preview of the qr code */
 @media screen {
-    #printSection {
+    #printContent {
         display: none;
     }
 }
@@ -70,10 +70,10 @@ textarea  {
     body * {
         visibility:hidden;
     }
-    #printSection, #printSection * {
+    #printContent, #printContent * {
         visibility:visible;
     }
-    #printSection {
+    #printContent {
         position:absolute;
         left:0;
         top:0;

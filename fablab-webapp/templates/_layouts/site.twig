@@ -29,14 +29,15 @@
                     <li class="nav-item nav-category">{{ "Navigation" |t}}</li>
                     {% for navCat in navigation.mainNavigation %}
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#{{ navCat.navigationCategory }}" aria-expanded="false" aria-controls="ui-basic">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#{{ navCat.navigationCategory|replace({' ': ''}) }}" aria-expanded="false" aria-controls="ui-basic">
                             <i class="menu-icon mdi mdi-{{navCat.iconlabel ? navCat.iconlabel : 'mdi-square-small' }}"></i>
                             <span class="menu-title"> {{navCat.navigationCategory}} </span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div class="collapse" id="{{ navCat.navigationCategory }}">
+                        <div class="collapse" id="{{ navCat.navigationCategory|replace({' ': ''}) }}">
                             <ul class="nav flex-column sub-menu">
                             {% for navCatItem in navCat.navigationCategoryItem %}
+
                                 <li class="nav-item"> <a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
                             {% endfor %}
                             </ul>
@@ -45,7 +46,9 @@
                     {% endfor %}
 
                     {% if navigation.navigation %}
+
                         {%  for navigationItem in navigation.navigation %}
+
                             <li class="nav-item">
                                 <a class="nav-link"  href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
                                     <i class="menu-icon mdi mdi-{{ navigationItem.iconlabel ? navigationItem.iconlabel : 'mdi-square-small' }}"></i>
