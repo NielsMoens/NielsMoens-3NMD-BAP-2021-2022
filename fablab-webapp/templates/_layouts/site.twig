@@ -23,7 +23,8 @@
             </div>
         </nav>
         <div class="container-fluid page-body-wrapper">
-            <nav class="d-flex flex-column  sidebar sidebar-offcanvas" id="sidebar">
+            <nav class=" sidebar sidebar-offcanvas" id="sidebar">
+                {# Main Nav section #}
                 <ul class="nav mt-5">
                     <li class="nav-item nav-category">{{ "Navigation" |t}}</li>
                     {% for navCat in navigation.mainNavigation %}
@@ -36,8 +37,7 @@
                         <div class="collapse" id="{{ navCat.navigationCategory|replace({' ': ''}) }}">
                             <ul class="nav flex-column sub-menu">
                             {% for navCatItem in navCat.navigationCategoryItem %}
-
-                                <li class="nav-item"> <a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
                             {% endfor %}
                             </ul>
                         </div>
@@ -47,17 +47,15 @@
                     {% if navigation.navigation %}
                         {%  for navigationItem in navigation.navigation %}
                             <li class="nav-item">
-                                <a class="nav-link"  href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                                <a class="nav-link" href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
                                     <i class="menu-icon mdi mdi-{{ navigationItem.iconlabel ? navigationItem.iconlabel : 'mdi-square-small' }}"></i>
                                     <span class="menu-title"> {{ navigationItem.navigationLabel }} </span>
                                 </a>
                             </li>
                         {% endfor %}
                     {% endif %}
-                </ul>
 
-                {# Change site language #}
-                <ul class="nav">
+                    {# Change site language #}
                     {# Change the site language and populate the language list shown dynamicly #}
                     {# This section contains parts of source: http://craftsnippets.com/articles/universal-language-switcher-for-craft-cms #}
 
@@ -109,7 +107,36 @@
                         {% endif %}
                     </div>
                 </ul>
+                <ul class="nav">
+                    {# Admin section#}
+                    {% if currentUser %}
+                        <li class="nav-item nav-category">{{ "Employees" |t}}</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#admin" data-bs-toggle="collapse">
+                                <i class="menu-icon mdi mdi-shield-account"></i>
+                                <span class="menu-title"> {{ currentUser.username }} </span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="admin">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl }}admin">Admin Panel</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl }}register/index">Register Users</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ logoutUrl }}">logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    {% else %}
+                        <li class="nav-item nav-category">{{ "Employees" |t}}</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ siteUrl }}login/index">
+                                <i class="menu-icon mdi mdi-login"></i>
+                                <span class="menu-title"> Employee login </span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
             </nav>
+
             <!-- partial -->
             <div class="main-panel ">
                 <div class="content-wrapper">
