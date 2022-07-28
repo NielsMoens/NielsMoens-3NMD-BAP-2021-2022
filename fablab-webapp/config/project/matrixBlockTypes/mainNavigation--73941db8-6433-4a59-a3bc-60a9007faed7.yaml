@@ -67,7 +67,7 @@ fields:
       limit: ''
       localizeRelations: false
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       source: null
       sources: '*'
       targetSiteId: null

@@ -1,10 +1,10 @@
 currLabel: 'Field Manager'
 customIcon: ''
-enabled: 0
+enabled: '0'
 handle: field-manager
 icon: /home/cyber/projects/NielsMoens-3NMD-BAP-2021-2022/fablab-webapp/vendor/verbb/field-manager/src/icon-mask.svg
 layout: 644bc34f-dfa9-4202-8f72-b7098b959238 # Default
-newWindow: 0
+newWindow: '0'
 order: 6
 prevLabel: 'Field Manager'
 prevUrl: field-manager

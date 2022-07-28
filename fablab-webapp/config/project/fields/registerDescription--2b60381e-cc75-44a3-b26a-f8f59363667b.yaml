@@ -1,9 +1,9 @@
-columnSuffix: hfnccnnv
+columnSuffix: uonjsyjb
 contentColumnType: text
 fieldGroup: 0db80961-0ad7-479f-8fd6-b9729841bcd2 # Login/Register
-handle: loginDescription
+handle: registerDescription
 instructions: ''
-name: 'Login Description'
+name: 'Register Description'
 searchable: false
 settings:
   byteLimit: null

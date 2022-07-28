@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 0db80961-0ad7-479f-8fd6-b9729841bcd2 # Login/Register
-handle: loginImage
+handle: registerImage
 instructions: ''
-name: 'Login Image'
+name: 'Register Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -27,7 +27,7 @@ settings:
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false
-  viewMode: list
+  viewMode: large
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

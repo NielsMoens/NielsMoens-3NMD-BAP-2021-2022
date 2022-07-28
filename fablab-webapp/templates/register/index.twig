@@ -2,7 +2,6 @@
 
 {% block content %}
     {# Require that a user is logged in to view this form. #}
-    {% requireLogin %}
 
     {% macro errorList(errors) %}
         {% if errors %}
@@ -75,6 +74,7 @@
                                         {{ user ? _self.errorList(user.getErrors('email')) }}
                                     </div>
 
+
                                     <div class="col-md-12 form-group">
                                         <label class="form-label" for="password">Password</label>
                                         {{ input('password', 'password', null, {
@@ -85,7 +85,7 @@
                                     </div>
 
                                     <div class="pt-1 mb-4">
-                                        <button class="btn btn-dark btn-lg btn-block" type="submit" value="Login" >Login</button>
+                                        <button class="btn btn-dark btn-lg btn-block" type="submit" value="Register" >Register</button>
                                     </div>
 
                                     {% if errorMessage is defined %}

@@ -1,0 +1,5 @@
+description: ''
+handle: employees
+name: Employees
+permissions:
+  - accesscp
