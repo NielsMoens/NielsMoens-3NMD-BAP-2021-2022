@@ -60,6 +60,19 @@
                                     {% set form = craft .freeform.form("Maintenance") %}
                                     <div class="row align-items-center site-hero-inner justify-content-center p-4">
                                         {{ form.renderTag }}
+                                        {% if form.hasErrors %}
+                                            <div class="freeform-form-has-errors">
+                                                {{ "Error! Please review the form and try submitting again."|t('freeform') }}
+
+                                                {% if form.errors|length %}
+                                                    <ul>
+                                                        {% for error in form.errors %}
+                                                            <p class="text-danger">{{ error }}</p>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            </div>
+                                        {% endif %}
                                             {% for row in form %}
                                                 <div class="row">
                                                     {% for field in row %}
