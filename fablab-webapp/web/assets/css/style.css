@@ -14344,10 +14344,19 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
     overflow: hidden;
 }
 
-/*.modal-open .modal {*/
-/*    overflow-x: hidden;*/
-/*    overflow-y: auto;*/
-/*}*/
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*make the modal scrolleble on mobile only*/
+@media (min-width: 1200px) {
+    .modal-open .modal  {
+        overflow-x: unset;
+        overflow-y: unset;
+    }
+}
 
 .modal {
     position: fixed;
