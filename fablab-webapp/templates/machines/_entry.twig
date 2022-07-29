@@ -13,18 +13,19 @@
                 <h3 class="font-weight-light">{{ entry.title }}</h3>
                 <p>{{ entry.description }}</p>
                 <a href="/reportproblem" class=" p-3 btn btn-outline-warning mt-3">
-                    Something wrong with the machine ? Report a problem here!
+                    {{"Something wrong with the machine ? Report a problem here!" |t}}
                 </a>
 
                 {% if currentUser %}
-                    <a data-toggle="modal" data-target="#form" class="p-3 btn btn-outline-primary mt-3">
-                        Create QR code
+                    {# Admin Create QR code #}
+                    <a data-toggle="modal" data-target="#qrcode" class="p-3 btn btn-outline-primary mt-3">
+                        {{ "Create QR code" |t }}
                     </a>
-                    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="qrcode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header border-bottom-0">
-                                    <h5 class="modal-title" id="exampleModalLabel">QR code</h5>
+                                    <h2 class="modal-title" id="exampleModalLabel">QR code</h2>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -35,7 +36,93 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <a id="btnPrint" type="button" class="p-3 btn btn-outline-primary mt-3">Print</a>
+                                    <a id="btnPrint" type="button" class="p-3 btn btn-outline-primary mt-3">{{ "Print" |t }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# Admin Report Maintenance  #}
+                    <a data-toggle="modal" data-target="#maintenance" class="p-3 btn btn-outline-primary mt-3">
+                        {{ "Maintenance Update" |t }}
+                    </a>
+                    <div class="modal fade" id="maintenance" tabindex="-1" role="form" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <h2 class="modal-title" id="exampleModalLabel">{{ "Maintenance" |t }} </h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    {# Fully custom form using the free form extention #}
+                                    {% set form = craft .freeform.form("Maintenance") %}
+                                    <div class="row align-items-center site-hero-inner justify-content-center p-4">
+                                        {{ form.renderTag }}
+                                            {% for row in form %}
+                                                <div class="row">
+                                                    {% for field in row %}
+                                                        {% if field.type == 'textarea' %}
+                                                            <div class="form-group col-sm-12 col-xs-12">
+                                                                <label for="form-input-{{ field.handle }}" class="required">
+                                                                    {{ field.label }}
+                                                                </label>
+                                                                <textarea class="form-control"
+                                                                          name="describeMaintenance"
+                                                                          id="form-input-"{{ field.handle}}
+                                                                          rows="10" >
+                                                                </textarea>
+                                                            </div>
+                                                        {% elseif field.type == 'file' %}
+                                                         <div class="form-group col-sm-12 col-xs-12">
+                                                            <label for="form-input-{{ field.handle }}" >
+                                                                {{ field.label }}
+                                                            </label>
+                                                            <input id="form-input-{{ field.handle}} "
+                                                                   class="form-control"
+                                                                   type="{{ field.type }}"
+                                                                   name="{{ field.handle }}"
+                                                                   value="{{ field.handle == 'machine' ? entry.title
+                                                                   : field.handle =='username' ? currentUser.username
+                                                                   : '' }}"
+                                                            />
+                                                         </div>
+                                                        {% elseif field.type != 'submit' %}
+                                                            <div class="form-group  col-sm-6 col-xs-12">
+                                                                <label for="form-input-{{ field.handle }}" >
+                                                                    {{ field.label }}
+                                                                </label>
+                                                                <input id="form-input-{{ field.handle}} "
+                                                                       class="form-control"
+                                                                       type="{{ field.type }}"
+                                                                       name="{{ field.handle }}"
+                                                                       value="{{ field.handle == 'machine' ? entry.title
+                                                                        : field.handle =='username' ? currentUser.username
+                                                                        : '' }}"
+                                                                       readonly
+                                                                />
+                                                            </div>
+                                                        {% else %}
+                                                            <div class="modal-footer">
+                                                                <div class="form-group col-sm-12 col-xs-12 submit-align-left">
+                                                                    <button id="form-input-"{{ field.handle}}
+                                                                            class="btn btn-primary btn btn-primary"
+                                                                            type="{{ field.type }}"
+                                                                            name="{{ field.handle }}"
+                                                                           value="{{ field.handle == 'machine' ? entry.title
+                                                                           : field.handle =='username' ? currentUser.username
+                                                                           : '' }}"
+                                                                    >{{  "Submit" |t}}</button>
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            {% endfor %}
+                                        {{ form.renderCLosingtag }}
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -52,7 +139,7 @@
                         <h4>
                             {{ entry.safetyBannerContent}}
                         </h4>
-                        <a href="{{ safety.url }}" class="btn btn-outline-info p-2 ">READ HERE!</a>
+                        <a href="{{ safety.url }}" class="btn btn-outline-info p-2 ">{{ "READ HERE!" |t }}</a>
                     </div>
                 </div>
             {% endfor %}

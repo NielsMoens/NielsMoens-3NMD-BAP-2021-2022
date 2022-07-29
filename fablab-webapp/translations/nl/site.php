@@ -1,6 +1,7 @@
 <?php
 
 return array(
+    // General
     "Learn more" => "Lees meer",
     "We're open today from" => "Wij zijn vandaag open van",
     "Today's Opening Hours" => "Openingstijden van vandaag",
@@ -11,5 +12,13 @@ return array(
     "Contact info" => "Contact gegevens",
     "Take me there" => "Bereken route",
     "Change Language" => "Taal aanpassen",
-    "Navigation" => "Navigatie"
-);
+    "Navigation" => "Navigatie",
+    "Something wrong with the machine ? Report a problem here!" =>"Is er iets mis met de machine? Meld hier een probleem!",
+
+    // Admin
+    "Create QR code" => "QR-code maken",
+    "Maintenance Update"  => "Onderhoud update",
+    "Maintenance" => "Onderhoud",
+    "Print" => "Afdrukken",
+    "Submit" => "Indienen",
+    );

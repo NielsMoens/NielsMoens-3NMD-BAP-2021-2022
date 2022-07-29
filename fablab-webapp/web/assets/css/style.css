@@ -14344,10 +14344,10 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
     overflow: hidden;
 }
 
-.modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
+/*.modal-open .modal {*/
+/*    overflow-x: hidden;*/
+/*    overflow-y: auto;*/
+/*}*/
 
 .modal {
     position: fixed;
@@ -24047,7 +24047,6 @@ code {
     font-weight: 400;
     font-size: 0.875rem;
     border-radius: 4px;
-    height: 2rem;
 }
 
 select.form-control, select.asColorPicker-input, .dataTables_wrapper select, .select2-container--default select.select2-selection--single, .select2-container--default .select2-selection--single select.select2-search__field, select.typeahead,
