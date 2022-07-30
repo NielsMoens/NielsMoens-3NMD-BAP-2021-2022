@@ -21,4 +21,12 @@ return array(
     "Maintenance" => "Onderhoud",
     "Print" => "Afdrukken",
     "Submit" => "Indienen",
+
+    // freefrom forms
+    "Username" => "Gebruikersnaam",
+    "First Name" => "Voornaam ",
+    "Last Name" => "Achternaam",
+    "Describe Maintenance" => "Beschrijf het onderhoud",
+    "Describe the problem" => "Beschrijf het probleem",
+    "Upload a picture" => "Upload een foto"
     );

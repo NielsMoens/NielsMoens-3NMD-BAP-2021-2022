@@ -57,29 +57,16 @@
                                 </div>
                                 <div class="modal-body">
                                     {# Fully custom form using the free form extention #}
-                                    {% set form = craft .freeform.form("Maintenance") %}
+                                    {% set form = craft.freeform.form("Maintenance") %}
                                     <div class="row align-items-center site-hero-inner justify-content-center p-4">
                                         {{ form.renderTag }}
-                                        {% if form.hasErrors %}
-                                            <div class="freeform-form-has-errors">
-                                                {{ "Error! Please review the form and try submitting again."|t('freeform') }}
-
-                                                {% if form.errors|length %}
-                                                    <ul>
-                                                        {% for error in form.errors %}
-                                                            <p class="text-danger">{{ error }}</p>
-                                                        {% endfor %}
-                                                    </ul>
-                                                {% endif %}
-                                            </div>
-                                        {% endif %}
                                             {% for row in form %}
                                                 <div class="row">
                                                     {% for field in row %}
                                                         {% if field.type == 'textarea' %}
                                                             <div class="form-group col-sm-12 col-xs-12">
                                                                 <label for="form-input-{{ field.handle }}" class="required">
-                                                                    {{ field.label }}
+                                                                    {{ field.label|t('freeform') }}
                                                                 </label>
                                                                 <textarea class="form-control"
                                                                           name="describeMaintenance"
@@ -90,7 +77,7 @@
                                                         {% elseif field.type == 'file' %}
                                                          <div class="form-group col-sm-12 col-xs-12">
                                                             <label for="form-input-{{ field.handle }}" >
-                                                                {{ field.label }}
+                                                                {{ field.label|t}}
                                                             </label>
                                                             <input id="form-input-{{ field.handle}} "
                                                                    class="form-control"
@@ -104,7 +91,7 @@
                                                         {% elseif field.type != 'submit' %}
                                                             <div class="form-group  col-sm-6 col-xs-12">
                                                                 <label for="form-input-{{ field.handle }}" >
-                                                                    {{ field.label }}
+                                                                    {{ field.label|t }}
                                                                 </label>
                                                                 <input id="form-input-{{ field.handle}} "
                                                                        class="form-control"
@@ -135,7 +122,6 @@
                                             {% endfor %}
                                         {{ form.renderCLosingtag }}
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -166,7 +152,6 @@
                 </div>
             </div>
         </div>
-
         <div id="accordion">
             <div class="card">
                 {% for instruction in entry.instructions%}
@@ -185,7 +170,8 @@
                            data-toggle="collapse"
                            data-target="#{{ instruction.instructionTitle | split(' ')[0] }}{{ randomCharacter }}"
                            aria-expanded="true"
-                           aria-controls="collapseOne"></i>
+                           aria-controls="collapseOne">
+                        </i>
                     </div>
                     <div id="{{ instruction.instructionTitle | split(' ')[0]}}{{ randomCharacter }}" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
@@ -196,5 +182,4 @@
             </div>
         </div>
     </div>
-
 {% endblock %}
