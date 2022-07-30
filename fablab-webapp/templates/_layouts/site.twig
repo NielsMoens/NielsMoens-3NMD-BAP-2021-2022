@@ -53,7 +53,11 @@
                     {% if navigation.navigation %}
                         {%  for navigationItem in navigation.navigation %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                                <a class="nav-link"
+                                   target="{{ navigationItem.navigationUrl == "/reportproblem" ? ""
+                                            : navigationItem.navigationUrl == "/nl/probleemmelden" ? ""
+                                            : "_blank" }}"
+                                   href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
                                     <i class="menu-icon mdi mdi-{{ navigationItem.iconlabel ? navigationItem.iconlabel : 'mdi-square-small' }}"></i>
                                     <span class="menu-title"> {{ navigationItem.navigationLabel }} </span>
                                 </a>
