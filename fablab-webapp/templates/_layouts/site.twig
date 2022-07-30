@@ -27,6 +27,12 @@
                 {# Main Nav section #}
                 <ul class="nav mt-5">
                     <li class="nav-item nav-category">{{ "Navigation" |t}}</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ siteUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="menu-icon mdi mdi-home"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
                     {% for navCat in navigation.mainNavigation %}
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#{{ navCat.navigationCategory|replace({' ': ''}) }}" aria-expanded="false" aria-controls="ui-basic">
@@ -36,9 +42,9 @@
                         </a>
                         <div class="collapse" id="{{ navCat.navigationCategory|replace({' ': ''}) }}">
                             <ul class="nav flex-column sub-menu">
-                            {% for navCatItem in navCat.navigationCategoryItem %}
-                                <li class="nav-item"><a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
-                            {% endfor %}
+                                {% for navCatItem in navCat.navigationCategoryItem %}
+                                    <li class="nav-item"><a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </li>
