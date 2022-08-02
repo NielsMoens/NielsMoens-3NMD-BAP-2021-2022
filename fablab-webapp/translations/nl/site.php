@@ -21,6 +21,9 @@ return array(
     "Maintenance" => "Onderhoud",
     "Print" => "Afdrukken",
     "Submit" => "Indienen",
+    "Employees"=> "Medewerkers",
+    "Admin Panel" => "Administratie Paneel",
+    "logout" => "Uitloggen",
 
     // freefrom forms
     "Username" => "Gebruikersnaam",

@@ -68,7 +68,6 @@
                     {# Change site language #}
                     {# Change the site language and populate the language list shown dynamicly #}
                     {# This section contains parts of source: http://craftsnippets.com/articles/universal-language-switcher-for-craft-cms #}
-
                     {# logic #}
                     {% set currentElement = craft.app.urlManager.matchedElement %}
                     {% set sites = craft.app.getSites().getGroupById(currentSite.groupId).getSites() %}
@@ -129,8 +128,8 @@
                             </a>
                             <div class="collapse" id="admin">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl }}admin">Admin Panel</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ logoutUrl }}">logout</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{{ siteUrl }}admin">{{ "Admin Panel" |t}}</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ logoutUrl }}">{{ "logout" |t }}</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -139,7 +138,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ siteUrl }}login/index">
                                 <i class="menu-icon mdi mdi-login"></i>
-                                <span class="menu-title"> Employee login </span>
+                                <span class="menu-title"> {{ "Employee login" |t }} </span>
                             </a>
                         </li>
                     {% endif %}
