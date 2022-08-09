@@ -19,7 +19,7 @@
             "sizes": "180x180"
         }
     ],
-    "start_url": "/",
+    "start_url": ".",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone"
