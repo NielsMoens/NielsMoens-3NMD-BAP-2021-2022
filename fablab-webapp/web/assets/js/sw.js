@@ -1,8 +1,8 @@
 /**
  * The service worker
  */
-var cacheName = 'makerlab-pwa';
-var filesToCache = [
+let cacheName = 'makerlab-pwa';
+let filesToCache = [
     '',
 ];
 
