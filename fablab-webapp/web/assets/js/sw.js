@@ -3,7 +3,7 @@
  */
 var cacheName = 'makerlab-pwa';
 var filesToCache = [
-    '/',
+    '',
 ];
 
  // Start the service worker and cache all of the app's content
