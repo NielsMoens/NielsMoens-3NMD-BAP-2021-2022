@@ -161,7 +161,11 @@
     </div>
 
     <!-- scripts :js -->
-
+    <script>
+        if(navigator.serviceWorker) {
+            navigator.serviceWorker.register('{{ primarySiteUrl }}assets/js/sw.js')
+        }
+    </script>
     <script src="{{ primarySiteUrl }}assets/js/print-qrcode-modal.js"></script>
     <script src="{{ primarySiteUrl }}assets/js/vendor.bundle.base.js"></script>
     <script src="{{ primarySiteUrl }}assets/js/off-canvas.js"></script>
