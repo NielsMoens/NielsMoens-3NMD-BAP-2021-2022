@@ -7,8 +7,8 @@
     {% set machines = craft.entries.section('machines') %}
     {% set thumbnail = entry.machineImage.one() %}
     <div class="container">
-        <div class="card flex-row roww p-0 gx-4 gx-lg-5 align-items-center mb-4">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="machineImage"></div>
+        <div class="card flex-row roww mt-4 mt-md-0 align-items-center mb-4">
+            <div class="col-lg-7"><img class="img-fluid rounded p-3 mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="machineImage"></div>
             <div class="col-lg-5 px-4 py-3 ">
                 <h3 class="font-weight-light">{{ entry.title }}</h3>
                 <p>{{ entry.description }}</p>
