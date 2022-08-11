@@ -23,7 +23,7 @@
                         <div class="col-lg-3 mt-3">
                             <section class="card h-100 card-rounded justify-content-around text-dark ">
                                 <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
-                                    <img class="rounded-3" src=" {{ thumbnail ? thumbnail.getUrl() : 'https://via.placeholder.com/160x90' }} " alt="Card image cap">
+                                    <img class="card-img-top rounded-3" src=" {{ thumbnail ? thumbnail.getUrl() : 'https://via.placeholder.com/160x90' }} " alt="Card image cap">
                                     <div class="card-body ">
                                         <h5 class="card-title">{{ machine.title }}</h5>
                                         {% for category in machine.machineType %}
