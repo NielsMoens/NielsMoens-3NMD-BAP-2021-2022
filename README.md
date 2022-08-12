@@ -3,11 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-   <a href="https://github.com/NielsMoens/NielsMoens-3NMD-BAP-2021-2022">
-    <img src="fablab-webapp/web/assets/images/logo-white.png" alt="Logo">
-  </a>
-
-<h3 align="center">FABLAB-webapp</h3>
+   
+<h3 align="center">bap-nielsmoens</h3>
 
 </div>
 
@@ -41,12 +38,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-In functie van mijn bap: FABLAB(3d printing, lasercutting, …) toegankelijker maken voor iedereen met interesse maar geen/weinig kennis.
-
+In function of my bachelor thesis:
+Making the experience of using MakerLabs(3d printing, lasercutting, ...) more accessible to anyone with interest but no/little knowledge.
 ### Goal
-De toegankelijkheid naar het gebruik van de machine zo veel mogelijk verhogen.
-Zodat een gebruiker (zowel ervaren als on ervaren ) op zelfstandige basis de informatie heeft hoe de apparaaten in het fablab op een correcte manier gebruikt kunnen worden.
-Deze informatie bron op een gemakkelijke manier beheerbaar maken voor de medewerkers van het fablab zonder programmeer kennis te hebben.
+More specifically, this platform tries to be user-friendly for the user in the form of providing information of the various machines and devices present, the possibility to create reports and give feedback if there are problems or defects. In addition, it will also give the possibility of general feedback that can optimize the operation. When it comes to usability for employees and administrators it focuses on the efficient and easy processing of notifications and feedback, but also in maintaining the platform. The goal is to be able to maintain the platform in the most accessible way possible and make adjustments if desired and needed.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,40 +83,40 @@ List of things you need to use and how to install them.
    ```sh
    mysql -u root -p
    ```
-3. Create a new schema called "fablab-webapp"
+3. Create a new schema called "bap-nielsmoens"
 4. Import the MySql database that you cloned from this repo
 5. Run de php localhost server
    or use the windows terminal
    ```sh
    php -S localhost:3000
    ```
-
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-## Usage
-WIP
-_For more examples, please refer to the [Documentation](TODO)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Adobe Xd
-Here you find the [design process](https://xd.adobe.com/view/17defd7d-2cdd-4dcb-9deb-02f650c26be3-428d/)
 
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Init project
-- [x] easily scalable for the fablab staff (using craft CMS)
-- [x] add a README
+- [x] Easily scalable for a MakersLab staff (using craft CMS)
+- [x] Add a README
 - [x] Add Styling (tailwind or bootstrap)
-- [ ] Report a problem page (topdesk API)
-- [ ] create custom pages for every machine or tool in the fablab 
-    - [ ] easily add items on the detail pages using craft cms backend 
-- [ ] User Testing
-- [ ] Deployment on Azure servers of Arteveldehs
+- [x] Add Dynamic navigation
+- [x] Homepage/dashboard
+- [x] Location overview page
+  - [x] Add location detail page
+    - [x] Opening hours
+    - [x] Location & contact with Google Maps integration
+    - [x] Machines available on location
+- [x] Machine list overview page
+  - [x] Create detail pages for
+    - [x] Report a problem feature
+    - [x] Safety rules
+    - [x] Instructions section
+    - [x] Generate QR code (admins only)
+    - [x] Maintenance update (admins only)
+- [x] Translations
+- [x] User Testing
+- [x] Hosting via digital ocean (LEMP STACK)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
