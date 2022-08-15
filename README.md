@@ -9,23 +9,15 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -45,6 +37,14 @@ More specifically, this platform tries to be user-friendly for the user in the f
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Hosting & Domain
+The web application is hosted on a Digital Ocean LEMP stack droplet. <br>
+The web application is accessible on the following domain<br>
+https://bap-nielsmoens.ga/
+
+### Screen recordings 
+Mobile: <br> https://vimeo.com/739693380 <br>
+Desktop preview & admin panel: <br> https://vimeo.com/739693683
 
 ### Built With
 
@@ -54,7 +54,6 @@ More specifically, this platform tries to be user-friendly for the user in the f
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
- 
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -65,7 +64,7 @@ To get a local copy up and running follow these simple example steps.
 
 List of things you need to use and how to install them.
 * [php 7.4+](https://www.php.net/manual/en/install.windows.php) & [MySQL 5.7+](https://www.php.net/manual/en/install.windows.php)
-    * I used [XAMPP](https://www.php.net/manual/en/install.windows.php) to install both (windows only)
+    * [XAMPP](https://www.php.net/manual/en/install.windows.tools.php) to install both (windows only)
 * A MySql database manager 
   * [MySQL Workbench](https://www.mysql.com/products/workbench/)
   * [DataGrip](https://www.jetbrains.com/datagrip/)
@@ -78,14 +77,19 @@ List of things you need to use and how to install them.
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. Turn on your MySql server in [XAMPP](https://www.php.net/manual/en/install.windows.php) 
+2. Turn on your MySql server in [XAMPP](https://www.php.net/manual/en/install.windows.tools.php) 
    or use the windows terminal
    ```sh
    mysql -u root -p
    ```
 3. Create a new schema called "bap-nielsmoens"
-4. Import the MySql database that you cloned from this repo
-5. Run de php localhost server
+4. Import the MySql database that you cloned from this repo <br>(file location : /web/assets/bap-nielsmoens-dump.sql)
+5. Change the .env to your database credentials 
+6. Install the composer packages
+7. ```sh
+   composer install
+   ```
+8. Run de php localhost server
    or use the windows terminal
    ```sh
    php -S localhost:3000
@@ -99,7 +103,7 @@ List of things you need to use and how to install them.
 - [x] Init project
 - [x] Easily scalable for a MakersLab staff (using craft CMS)
 - [x] Add a README
-- [x] Add Styling (tailwind or bootstrap)
+- [x] Add Styling (bootstrap)
 - [x] Add Dynamic navigation
 - [x] Homepage/dashboard
 - [x] Location overview page
