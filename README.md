@@ -19,10 +19,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -50,7 +48,7 @@ Desktop preview & admin panel: <br> https://vimeo.com/739693683
 
 * [Craft CMS](https://craftcms.com/)
 * [Bootstrap](https://getbootstrap.com)
-* [materialdesignicons](https://materialdesignicons.com/)
+* [Materialdesignicons](https://materialdesignicons.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
