@@ -1,0 +1,118 @@
+fieldLayouts:
+  1d8fdefc-e401-46b9-a527-4bcff7d8fd22:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 440ca2f6-c43c-4a7c-b436-1366abbc1b24 # Machine Image 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6c70c20a-4aee-4f21-b4ff-52ebaf36a707 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 89d69fb1-217d-43b2-bf94-aa84ea1d19e9 # Machine Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0845fdb0-dae4-4de9-ace1-aa4bec536fa2 # Safety Banner Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8adfccea-c28b-443e-b085-a479432c7469 # SafetyType
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Machine Detail Page Content'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: a9aa0fe6-f7d7-4ae8-81c3-ce7074ed7c58 # Instructions Section Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 71ee94e7-a545-4cae-8239-98119028b390 # Instructions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Instructions
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: f5ae64bc-6530-4565-966c-d29594de6f43 # Report A Problem Title 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Report A Problem'
+        sortOrder: 3
+handle: default
+hasTitleField: true
+name: Default
+section: af0bfecc-78dd-4e4f-9584-29bbfdd8a269 # machines
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

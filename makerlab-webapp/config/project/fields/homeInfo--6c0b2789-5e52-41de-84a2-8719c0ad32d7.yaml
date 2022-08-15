@@ -1,0 +1,27 @@
+columnSuffix: dncjzafn
+contentColumnType: text
+fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
+handle: homeInfo
+instructions: ''
+name: 'Home Info'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

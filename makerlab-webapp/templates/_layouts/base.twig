@@ -1,0 +1,28 @@
+{% block base %}
+    {#get the primary base url prevent styling and linking issues on different languages of the site#}
+    {% set primarySiteUrl = craft.app.sites.primarySite.baseUrl %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>MakersLab-webapp</title>
+
+        <!-- import:css -->
+        <link rel="stylesheet" href="{{ primarySiteUrl }}assets/css/style.css">
+        <link rel="stylesheet" href="{{ primarySiteUrl }}assets/css/custom-styles.css">
+
+        <!-- icons for on the website -->
+        <link rel="stylesheet" href="{{ primarySiteUrl }}assets/css/materialdesignicons.min.css">
+        <!-- import:favicon -->
+        <link rel="shortcut icon" href="{{ primarySiteUrl }}assets/images/android-chrome-192x192.png" />
+
+        <!-- import:manifest -->
+        <link rel="manifest" href="{{ primarySiteUrl }}assets/manifest.json" />
+    </head>
+
+    {% block body %}{% endblock %}
+
+    </html>
+{% endblock %}

@@ -1,0 +1,81 @@
+.thumb-post img {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    max-height: 250px;
+    margin-bottom: 1rem;
+}
+
+.center-cropped {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+    width: 100%;
+
+    height: auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-font{
+    font-size: 1.5rem;
+}
+textarea  {
+    width: 200px;
+}
+
+#form-input-uploadAPicture{
+    margin: 10px 0px 20px 0px;
+}
+
+.btn-icon-split {
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/*show the correct things in the print preview of the qr code */
+@media screen {
+    #printContent {
+        display: none;
+    }
+}
+
+@media print {
+    body * {
+        visibility:hidden;
+    }
+    #printContent, #printContent * {
+        visibility:visible;
+    }
+    #printContent {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+}

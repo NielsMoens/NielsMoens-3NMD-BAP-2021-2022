@@ -1,7 +1,0 @@
-allowPublicRegistration: true
-defaultGroup: ''
-photoSubpath: null
-photoVolumeUid: 0433a068-a333-46ec-ba43-870dfbb5a5c6 # Uploads
-requireEmailVerification: false
-suspendByDefault: false
-validateOnPublicRegistration: false

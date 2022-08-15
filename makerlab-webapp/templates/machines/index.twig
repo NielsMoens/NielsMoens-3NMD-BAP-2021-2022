@@ -1,0 +1,43 @@
+{% extends "_layouts/site" %}
+{#
+    Machines overview page
+#}
+{% block content %}
+    {% set machinesOverview = craft.entries.section('machinesOverview').one() %}
+    <div class="card card-rounded bg-primary mt-4 mt-md-0">
+        <div class="card-body">
+            <div class="col-sm-12 text-center">
+                <h2 class="text-white upgrade-info mb-0">{{ machinesOverview.machinesOverviewTitle }}</h2>
+                {% if(machinesOverview.machinesOverviewDescription )  %}
+                    <p class="text-white">{{ machinesOverview.machinesOverviewDescription }}</p>
+                {%  endif %}
+            </div>
+        </div>
+    </div>
+
+   <div class="row">
+       <div class="col-lg-12 d-flex flex-column d-flex align-content-center">
+            <div class="row d-flex align-content-center">
+               {% set machines = craft.entries.section('machines') %}
+               {% for machine in machines %}
+                {% set thumbnail = machine.machineImage.one() %}
+
+                    <div class="col-lg-3 mt-3">
+                        <section class="card h-100 card-rounded justify-content-around text-dark ">
+                            <div class=" grid-margin d-flex flex-column  stretch-card card-rounded">
+                                <img class="card-img-top rounded-3" src=" {{ thumbnail ? thumbnail.getUrl() : 'https://via.placeholder.com/160x90' }} " alt="Card image cap">
+                                <div class="card-body ">
+                                    <h5 class="card-title">{{ machine.title }}</h5>
+                                    {% for category in machine.machineType %}
+                                    <span class=" mb-3 badge badge-primary">{{ category.title }}</span><br>
+                                    {% endfor %}
+                                    <a href="{{ machine.url }}" class="btn btn-primary">{{ "Learn more" |t }}</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

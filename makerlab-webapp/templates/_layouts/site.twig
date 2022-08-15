@@ -1,0 +1,174 @@
+{% extends "_layouts/base" %}
+
+{% block body %}
+<body>
+    <div class="container-scroller">
+        <nav class="navbar default-layout col-lg-12 fixed-top d-flex d-row align-items-top flex-row">
+            <div class="text-center navbar-brand-wrapper col-2 d-flex align-items-center justify-content-start">
+                <div class="d-flex flex-row">
+                    <a class="navbar-brand brand-logo" href="{{ siteUrl }}">
+                        <img src="{{ logo.logoImage.one().getUrl() }}" alt="logo" />
+                    </a>
+                    <a class="navbar-brand brand-logo-mini" href="{{ siteUrl }}">
+                        <img src="{{ logo.logoImage.one().getUrl() }}" alt="logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-menu-wrapper col-10 d-flex align-items-top">
+                <ul class="navbar-nav ms-auto">
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <nav class=" sidebar sidebar-offcanvas" id="sidebar">
+                {# Main Nav section #}
+                <ul class="nav mt-5">
+                    <li class="nav-item nav-category">{{ "Navigation" |t}}</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ siteUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="menu-icon mdi mdi-home"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    {% for navCat in navigation.mainNavigation %}
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#{{ navCat.navigationCategory|replace({' ': ''}) }}" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="menu-icon mdi mdi-{{navCat.iconlabel ? navCat.iconlabel : 'mdi-square-small' }}"></i>
+                            <span class="menu-title"> {{navCat.navigationCategory}} </span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="{{ navCat.navigationCategory|replace({' ': ''}) }}">
+                            <ul class="nav flex-column sub-menu">
+                                {% for navCatItem in navCat.navigationCategoryItem %}
+                                    <li class="nav-item"><a class="nav-link" href="{{ navCatItem.url }}">{{navCatItem.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                    {% if navigation.navigation %}
+                        {%  for navigationItem in navigation.navigation %}
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   target="{{ navigationItem.navigationUrl == "/reportproblem" ? ""
+                                            : navigationItem.navigationUrl == "/nl/probleemmelden" ? ""
+                                            : "_blank" }}"
+                                   href="{{ navigationItem.navigationUrl }}" aria-expanded="false" aria-controls="ui-basic">
+                                    <i class="menu-icon mdi mdi-{{ navigationItem.iconlabel ? navigationItem.iconlabel : 'mdi-square-small' }}"></i>
+                                    <span class="menu-title"> {{ navigationItem.navigationLabel }} </span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+
+                    {# Change site language #}
+                    {# Change the site language and populate the language list shown dynamicly #}
+                    {# This section contains parts of source: http://craftsnippets.com/articles/universal-language-switcher-for-craft-cms #}
+                    {# logic #}
+                    {% set currentElement = craft.app.urlManager.matchedElement %}
+                    {% set sites = craft.app.getSites().getGroupById(currentSite.groupId).getSites() %}
+                    {% set switcherLinks = [] %}
+
+                    {% for site in sites if site.baseUrl is not empty %}
+                        {% set title = craft.app.i18n.getLocaleById(site.language).nativeName %}
+                        {% set url = site.getBaseUrl() %}
+                        {% if currentElement %}
+                            {% set otherLocaleElement = craft.app.getElements().getElementById(currentElement.id, currentElement.className(), site.id) %}
+                            {% if otherLocaleElement and otherLocaleElement.enabledForSite %}
+                                {% set url = otherLocaleElement.url %}
+                            {% endif %}
+                        {% endif %}
+
+                        {% set switcherLinks = switcherLinks|merge([{
+                            url: url,
+                            title: title,
+                            countryCode: site.language|split('-')|last,
+                            current: site.id == currentSite.id ? true : false,
+                            language: site.language,
+                        }]) %}
+                    {% endfor %}
+                    <li class="nav-item nav-category">{{ "Change Language" |t}}</li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#lang" aria-expanded="false" aria-controls="ui-basic">
+                            {% for switcherLink in switcherLinks %}
+                                {% if(switcherLink.current == 1) %}
+                                    <i class="menu-icon mdi mdi-earth"><span class="menu-title">{{ switcherLink.language }} </span></i>
+                                {% endif %}
+                            {% endfor %}
+                            <i class="menu-arrow"></i>
+                        </a>
+                    </li>
+                    <div class="collapse" id="lang">
+                        {% if switcherLinks|length > 1 %}
+                            <ul class="nav flex-column sub-menu">
+                                {% for switcherLink in switcherLinks %}
+                                    <li class="  nav-item">
+                                        <a class="nav-link" href="{{switcherLink.url}}" hreflang="{{switcherLink.language}}" lang="{{switcherLink.language}}">
+                                            <span class="{{switcherLink.current ? 'text-decoration-underline font-weight-700' }}  menu-title">{{ switcherLink.title }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </ul>
+                <ul class="nav">
+                    {# Admin section#}
+                    {% if currentUser %}
+                        <li class="nav-item nav-category">{{ "Employees" |t}}</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#admin" data-bs-toggle="collapse">
+                                <i class="menu-icon mdi mdi-shield-account"></i>
+                                <span class="menu-title"> {{ currentUser.username }} </span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="admin">
+                                <ul class="nav flex-column sub-menu">
+                                        <li class="nav-item"><a class="nav-link" href="{{ siteUrl }}admin">{{ "Admin Panel" |t}}</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ logoutUrl }}">{{ "logout" |t }}</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    {% else %}
+                        <li class="nav-item nav-category">{{ "Employees" |t}}</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ siteUrl }}login/index">
+                                <i class="menu-icon mdi mdi-login"></i>
+                                <span class="menu-title"> {{ "Employee login" |t }} </span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+
+            <!-- partial -->
+            <div class="main-panel ">
+                <div class="content-wrapper">
+                {% block content %} {% endblock %}
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">{{ footer.footerText}} </span>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts :js -->
+    <script>
+        if(navigator.serviceWorker) {
+            navigator.serviceWorker.register('{{ primarySiteUrl }}assets/js/sw.js')
+        }
+    </script>
+    <script src="{{ primarySiteUrl }}assets/js/vendor.bundle.base.js"></script>
+    <script src="{{ primarySiteUrl }}assets/js/off-canvas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+

@@ -1,9 +1,0 @@
-baseUrl: '@web/nl'
-enabled: true
-handle: nl
-hasUrls: true
-language: nl
-name: bap-nielsmoens_NL
-primary: false
-siteGroup: 52cb5f57-6c9b-4be6-9f84-62c3ad0bb57a # bap-nielsmoens
-sortOrder: 2

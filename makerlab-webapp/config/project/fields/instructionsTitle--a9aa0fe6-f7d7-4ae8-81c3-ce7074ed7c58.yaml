@@ -1,0 +1,19 @@
+columnSuffix: wcnbpbxv
+contentColumnType: string(1020)
+fieldGroup: 66f566b6-261d-4293-820c-28d42ea78c31 # machines
+handle: instructionsTitle
+instructions: ''
+name: 'Instructions Section Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: Instructions
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

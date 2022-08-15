@@ -1,0 +1,19 @@
+columnSuffix: agxksuvj
+contentColumnType: string(1020)
+fieldGroup: b71257cc-2010-4297-9163-f1f60dd5ac31 # General
+handle: reportProblemInfo
+instructions: ''
+name: 'Report Problem Info'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

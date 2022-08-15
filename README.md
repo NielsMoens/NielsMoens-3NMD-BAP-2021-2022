@@ -115,8 +115,10 @@ List of things you need to use and how to install them.
     - [x] Generate QR code (admins only)
     - [x] Maintenance update (admins only)
 - [x] Translations
-- [x] User Testing
 - [x] Hosting via digital ocean (LEMP STACK)
+- [x] Progresive Web App (PWA)
+- [x] Email server using Amazon AWS SES ( Simple Email Service)
+- [x] User Testing
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

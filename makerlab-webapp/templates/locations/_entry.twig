@@ -1,0 +1,78 @@
+{% extends "_layouts/site" %}
+
+{% block content  %}
+    {% set thumbnail = entry.locationImage.one() %}
+    <div class="container ">
+        <div class="card flex-row roww mt-4 mt-md-0 align-items-center mb-4">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-lg-0" src="{{ thumbnail.getUrl() }}" alt="..."></div>
+            <div class="col-lg-5 px-4 py-3">
+                <h3 class="font-weight-light">{{ entry.title }}</h3>
+                <p>{{ entry.locationDescription? entry.locationDescription : ''}}</p>
+            </div>
+        </div>
+
+        {% if( entry.locationImportantAnnouncement) %}
+            <div class="card text-white my-3  text-center bg-primary">
+                <div class="card-body ">
+                    <h4>
+                        {{ entry.locationImportantAnnouncement }}
+                    </h4>
+                </div>
+            </div>
+        {%  endif %}
+
+        <div class="row gx-lg-5">
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ entry.openinghoursTitle }}</h2>
+                            <ul class="list-unstyled">
+                                {% for day in entry.openingHours %}
+                                <li class=" d-flex justify-content-between">
+                                    <strong>{{ day.name }}</strong>
+                                    <span>
+                                        {% if day.isBlank %}
+                                            {{ "Closed" |t}}
+                                        {% else %}
+                                            {{ day.open|time }} - {{ day.close|time }}
+                                        {% endif %}
+                                    </span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ entry.locationSectionTitle }}</h2>
+
+                        <ul class="list-unstyled ld-flex flex-column ">
+                            <li class="mb-4">
+                                <strong>{{ "Address" |t}}</strong><br>
+                                <span>{{ entry.locationAddress }} <br> <a class="btn btn-primary p-2" href="http://maps.google.com/?q={{ entry.locationAddress }}">{{ "Take me there" |t}}!</a></span>
+                            </li>
+                            <li>
+                                <strong>{{ "Contact info" |t}}</strong><br>
+                                <span> {{ entry.locationContactEmail ? entry.locationContactEmail : '' }}<br>{{ entry.locationContactPhoneNumber ? entry.locationContactPhoneNumber : '' }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-2">
+                <div class="card h-100">
+                    <h2 class="ms-4 mt-4 card-title">{{ entry.machinesOnLocationsTitle }}</h2>
+                    <ul class="pb-3 list-group list-group-flush">
+                        {% set machines = entry.machinesOnLocation %}
+                        {%for machine in machines %}
+                            <li class="ms-2 list-group-item "> <a class="text-dark" href="{{ machine.url }}">{{ machine.title}}</a> </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

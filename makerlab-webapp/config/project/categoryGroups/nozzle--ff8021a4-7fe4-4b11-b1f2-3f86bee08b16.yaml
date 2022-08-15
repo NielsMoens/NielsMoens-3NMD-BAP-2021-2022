@@ -1,0 +1,45 @@
+defaultPlacement: end
+fieldLayouts:
+  10298379-cf29-4ad3-9ccb-06a924012010:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: nozzle
+name: 'Nozzle '
+siteSettings:
+  00738fd8-71aa-43a1-a75e-4a54311e2180: # bap-nielsmoens_NL
+    hasUrls: true
+    template: null
+    uriFormat: 'nozzle/{slug}'
+  f4a3df03-9dd3-4b04-8fb7-c6d007843eb4: # bap-nielsmoens_EN
+    hasUrls: true
+    template: null
+    uriFormat: 'nozzle/{slug}'
+structure:
+  maxLevels: null
+  uid: bbda6d3b-3eba-4cf2-b921-35c76cf10c98

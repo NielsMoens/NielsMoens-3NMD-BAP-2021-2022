@@ -1,0 +1,19 @@
+columnSuffix: fjoqgbkd
+contentColumnType: text
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: locationsOverviewDescription
+instructions: 'if necessary, add a description to the overview page '
+name: 'locations Overview Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

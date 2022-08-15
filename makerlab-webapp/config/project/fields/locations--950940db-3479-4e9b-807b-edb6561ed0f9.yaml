@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 5c64d819-0d02-4285-a033-940cd7b8e347 # Home
+handle: locations
+instructions: ''
+name: Locations
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '8'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:dcaea295-d65f-4a92-a262-d60c36f61870' # locations
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

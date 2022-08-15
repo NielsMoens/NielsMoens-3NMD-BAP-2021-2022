@@ -1,0 +1,19 @@
+columnSuffix: bfmsnzsk
+contentColumnType: text
+fieldGroup: 6b8a5f7b-0fdc-4b5c-9030-63dc5e42e90d # locations
+handle: openingshoursOpenMessage
+instructions: ''
+name: 'OpeningsHours Open Message'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText
